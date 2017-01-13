@@ -1,0 +1,60 @@
+body {
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: center;
+	background-color: #DDDDDD;
+}
+
+
+h1 {
+	width: 100%;
+	font-size: 200%;
+	font-family: rockwell extra bold, serif;
+	color: white;
+	background-color: red;
+}
+
+h2 {
+	background-color: red;
+	color: white;
+	font-size: 150%;
+	text-indent: 10px;
+}
+
+div#assignments {
+	width: 40%;
+	margin-left: 30%;
+}
+
+div#about_me {
+	width: 40%;
+	margin-left: 30%;
+}
+
+img {
+	height: 200px;
+	width: 200px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+p {
+	font-size: 100%;
+	font-family: sans-serif;
+	text-align: left;
+}
+
+a {
+	font-size: 125%;
+	font-weight: normal;
+}
+
+a:hover {
+	color: navy;
+	font-weight: bold;
+}
+
+a:visited {
+	color: purple;
+	font-weight: normal;
+}
