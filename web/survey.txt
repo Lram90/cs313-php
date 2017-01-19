@@ -1,7 +1,4 @@
-a_lot
-social
-game
+allTheTime
 research
 laptop
-console
 tabs
