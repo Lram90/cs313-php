@@ -1,8 +1,8 @@
 <?php 
-	session_start();
-	if ($_SESSION['submitted'] === True){
+	//session_start();
+	//if ($_SESSION['submitted'] === True){
 		header('location:answers.php');
-	}
+	//}
 ?>
 
 <!doctype html>
