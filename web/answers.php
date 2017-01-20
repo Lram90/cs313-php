@@ -1,8 +1,10 @@
 <?php
+	session_start();
+	
 	$_SESSION['submitted'] = False;
 
 	if (isset($_POST['submit'])){
-		header('Location: '.$_SERVER['PHP_SELF']);
+		$_SESSION['submitted'] = True;
 	}
 ?>
 
