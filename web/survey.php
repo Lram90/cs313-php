@@ -16,7 +16,7 @@
 <body>
 	<h1>Internet Usage Survey</h1>
 	<h2>CS 313 Week 3 Prove Assignment</h2>
-	
+	<a href="assignments.html">Back to Assignments</a>
 	<form action="answers.php" method="post">
 		<div class="question">How often do you use the internet?<br>
 		<div class="answers"><input type="radio" name="often" value="rarely" required="required">Rarely Ever<br>
