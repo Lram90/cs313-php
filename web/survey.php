@@ -53,9 +53,9 @@
 		</div></div>
 		
 		<div class="submit">
-		<a href="assignments.html"><Back to Assignments</a>
+		<a href="assignments.html">Back to Assignments</a>
 		<input type="submit" name="Submit" class="button"/>
-		<a href="answers.php">>To Results</a>
+		<a href="answers.php">To Results</a>
 		</div>
 		
 	</form>
