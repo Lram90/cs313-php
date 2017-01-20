@@ -41,52 +41,52 @@
 			case "rarely\n":
 			$rarely++;
 			break;
-			case "sometimes":
+			case "sometimes\n":
 			$sometimes++;
 			break;
-			case "often":
+			case "often\n":
 			$often++;
 			break;
-			case "All The Time":
+			case "All The Time\n":
 			$allTheTime++;
 			break;
-			case "Social Media":
+			case "Social Media\n":
 			$socialMedia++;
 			break;
-			case "Playing Games":
+			case "Playing Games\n":
 			$playingGames++;
 			break;
-			case "Shop":
+			case "Shop\n":
 			$shop++;
 			break;
-			case "Waatching Videos":
+			case "Watching Videos\n":
 			$watch++;
 			break;
-			case "Research":
+			case "Research\n":
 			$research++;
 			break;
-			case "Desktop":
+			case "Desktop\n":
 			$desktop++;
 			break;
-			case "Laptop":
+			case "Laptop\n":
 			$laptop++;
 			break;
-			case "Tablet":
+			case "Tablet\n":
 			$tablet++;
 			break;
-			case "Phone":
+			case "Phone\n":
 			$phone++;
 			break;
-			case "Game Console":
+			case "Game Console\n":
 			$console++;
 			break;
-			case "tabs":
+			case "tabs\n":
 			$tabs++;
 			break;
-			case "search":
+			case "search\n":
 			$search++;
 			break;
-			case "links":
+			case "links\n":
 			$links++;
 			break;
 			default:
