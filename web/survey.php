@@ -22,13 +22,82 @@
 	fwrite($answers, "\n");
 	fwrite($answers, $nav);
 	fwrite($answers, "\n");
+	fclose($answers);
     ?>
-
+<!--Separated php for easier understanding (for me)-->
 <?php
 	$myfile = fopen("survey.txt", "r") or die("Unable to open file!");
-    echo fread($myfile,filesize("survey.txt"));
+    	$rarely = $sometimes = $often = $allTheTime = 0;
+		$socialMedia = $playingGames = $shop = $watch = $research = 0;
+		$desktop = $laptop = $tablet = $phone = $console = 0;
+		$tabs = $search = $links = 0;
+		
+	while(!feof($myfile)){
+		$current = fgets($myfile);
+		switch($current)
+		{
+			case "rarely":
+			$rarely++;
+			break;
+			case "sometimes":
+			$sometimes++;
+			break;
+			case "often":
+			$often++;
+			break;
+			case "All The Time":
+			$allTheTime++;
+			break;
+			case "Social Media":
+			$socialMedia++;
+			break;
+			case "Playing Games":
+			$playingGames++;
+			break;
+			case "Shop":
+			$shop++;
+			break;
+			case "Waatching Videos":
+			$watch++;
+			break;
+			case "Research":
+			$research++;
+			break;
+			case "Desktop":
+			$desktop++;
+			break;
+			case "Laptop":
+			$laptop++;
+			break;
+			case "Tablet":
+			$tablet++;
+			break;
+			case "Phone":
+			$phone++;
+			break;
+			case "Game Console":
+			$console++;
+			break;
+			case "tabs":
+			$tabs++;
+			break;
+			case "search":
+			$search++;
+			break;
+			case "links":
+			$links++;
+			break;
+			default:
+			break;
+		}
+	}
     fclose($myfile);
+	
+	echo "<p>How often do you use the internet?</p><ul><li>Rarely:   " . $rarely
+	     . "</li><li>Sometimes:   " . $sometimes . "</li><li>Often:   " . $often
+		 . "</li><li> All The Time:   ". $allTheTime;
 	?>
+	
 </body>
 </html>
   
