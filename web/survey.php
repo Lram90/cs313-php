@@ -8,10 +8,10 @@
 	<h1>Internet Usage Answers</h1>
 	<h2>CS 313 Week 3 Prove Assignment</h2>
 	<?php
-	$often = $_POST["often"];
-	$use = $_POST["use"];
-	$device = $_POST["device"];
-	$nav = $_POST["nav"];
+	$often = $_POST["often"] . "\n";
+	$use = $_POST["use"] . "\n";
+	$device = $_POST["device"] . "\n";
+	$nav = $_POST["nav"] . "\n";
 	$answers = fopen("survey.txt", "a") or die ("Unable to open file!");
 	
 	fwrite($answers, $often);
