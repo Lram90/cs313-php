@@ -33,7 +33,7 @@
 		Shop</input><br>
 		<input type="radio" id="video" value="Watching Videos" name="use" required="required">
 		Watch Vidoes</input><br>
-		<input type="radio" id="research" value="Reasearch" name="use" required="required">
+		<input type="radio" id="research" value="Research" name="use" required="required">
 		Research Information</input><br>
 		</div></div>	   
 			   
