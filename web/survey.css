@@ -32,6 +32,7 @@ div.answers{
 div.submit{
 	margin-left: 7.5%;
 	margin-top: 1%;
+	float: left;
 }
 
 a {
@@ -45,4 +46,8 @@ a:hover{
 	font-size: 150%;
 	font-weight: bold;
 	text-decoration: underline;
+}
+
+input.button {
+    width: 20em;  height: 2em;
 }
