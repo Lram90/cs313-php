@@ -2,7 +2,7 @@
 	$_SESSION['submitted'] = False;
 
 	if (isset($_POST['submit'])){
-		$_SESSION['submitted'] = True;
+		header('Location: '.$_SERVER['PHP_SELF']);
 	}
 ?>
 
