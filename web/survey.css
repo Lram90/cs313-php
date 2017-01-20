@@ -1,21 +1,21 @@
 body{
 	background: linear-gradient(rgb(255, 0, 0), rgb(255, 180, 0), rgb(255, 0, 0));
 	color: white;
-	margin-left: 10%;
+	margin-left: 5%;
 }
 
 h1{
-	font-size: 200%;
+	font-size: 250%;
 }
 
 h2{
-	font-size: 150%;
+	font-size: 175%;
 }
 
 div.question{
 	margin-left: 5%;
 	margin-top: 2.5%;
-	font-size: 125%;
+	font-size: 130%;
 	font-weight: bold;
 
 }
@@ -23,7 +23,7 @@ div.question{
 div.answers{
 	margin-left: 30px;
 	margin-top: 1%;
-	font-size: 75%;
+	font-size: 80%;
 	font-weight: normal;
 }
 
