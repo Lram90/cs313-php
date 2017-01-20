@@ -1,9 +1,9 @@
 <?php 
 	session_start();
-	if (isset($_SESSION['subbmitted'])
-	{
+	//if (isset($_SESSION['subbmitted'])
+	//{
 		header('location:answers.php', true);
-	}
+	//}
 	//print_r($_SESSION);
 ?>
 
