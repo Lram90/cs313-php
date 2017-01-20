@@ -1,18 +1,18 @@
 body{
 	background: linear-gradient(rgb(255, 0, 0), rgb(255, 180, 0), rgb(255, 0, 0));
 	color: white;
-	margin-left: 20%;
+	margin-left: 30%;
 }
 
 h1{
 	font-size: 300%;
-	width: 80%;
+	width: 70%;
 	text-align: center;
 }
 
 h2{
 	font-size: 200%;
-	width: 80%;
+	width: 70%;
 	text-align: center;
 }
 
