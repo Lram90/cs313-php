@@ -38,7 +38,7 @@
 		echo "parsing!\n";
 		switch($current)
 		{
-			case "rarely":
+			case "rarely\n":
 			$rarely++;
 			break;
 			case "sometimes":
