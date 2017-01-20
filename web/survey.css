@@ -40,7 +40,6 @@ div.submit{
 }
 
 a {
-	margin-left: 7.5%;
 	margin-right: 7.5%;
 	margin-top: 1%;
 	font-size: 150%;
@@ -56,6 +55,7 @@ a:hover{
 input.button {
     width: 10em;  
 	font-size: 150%;
+	margin-right: 7.5%;
 }
 
 p {
