@@ -1,8 +1,7 @@
 <?php 
 	session_start();
 	//print_r($_SESSION);
-	$_SESSION['submitted'] = false;
-	if(!empty($_SESSION['submitted']){
+	if(!empty($_SESSION['submitted'])){
 		header('Location: https://stormy-spire-65023.herokuapp.com/answers.php');
 	}
 ?>
