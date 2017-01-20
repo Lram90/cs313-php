@@ -1,0 +1,28 @@
+body{
+	background-color: rgb(0, 20, 60);	
+}
+
+h1{
+	font-size: 200%;
+}
+
+h2{
+	font-size: 150%;
+}
+
+div.question{
+	margin-left: 5%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+}
+
+div.answer{
+	margin-left: 5%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+}
+
+div.submit{
+	margin-left: 10%;
+	margin-top: 5%;
+}
