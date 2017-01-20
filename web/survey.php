@@ -15,13 +15,13 @@
 	$answers = fopen("survey.txt", "a") or die ("Unable to open file!");
 	
 	fwrite($answers, $often);
-	fwrite($answers, "\n");
+	//fwrite($answers, "\n");
 	fwrite($answers, $use);
-	fwrite($answers, "\n");
+	//fwrite($answers, "\n");
 	fwrite($answers, $device);
-	fwrite($answers, "\n");
+	//fwrite($answers, "\n");
 	fwrite($answers, $nav);
-	fwrite($answers, "\n");
+	//fwrite($answers, "\n");
 	fclose($answers);
     ?>
 <!--Separated php for easier understanding (for me)-->
