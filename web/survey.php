@@ -12,7 +12,7 @@
 	$use = $_POST["use"];
 	$device = $_POST["device"];
 	$nav = $_POST["nav"];
-	$answers = "survey.txt";
+	$answers = fopen("survey.txt", "a") or die ("Unable to open file!");
 	
 	fwrite($answers, $often);
 	fwrite($answers, "\n");
