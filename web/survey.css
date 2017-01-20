@@ -1,7 +1,7 @@
 body{
 	background: linear-gradient(rgb(255, 0, 0), rgb(255, 180, 0), rgb(255, 0, 0));
 	color: white;
-	margin-left: 5%;
+	margin-left: 10%;
 }
 
 h1{
@@ -13,7 +13,6 @@ h2{
 }
 
 div.question{
-	margin-left: 5%;
 	margin-top: 2.5%;
 	font-size: 150%;
 	font-weight: bold;
