@@ -19,7 +19,7 @@
 	
 	<form action="answers.php" method="post">
 		<div class="question">How often do you use the internet?<br>
-		<div class="answers><input type="radio" name="often" value="rarely" required="required">Rarely Ever<br>
+		<div class="answers"><input type="radio" name="often" value="rarely" required="required">Rarely Ever<br>
 		<input type="radio" name="often" value="sometimes" required="required">Sometimes<br>
 		<input type="radio" name="often" value="often" required="required">Often<br>
 		<input type="radio" name="often" value="All The Time" required="required">All The Time<br>
