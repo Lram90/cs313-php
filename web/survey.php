@@ -1,6 +1,9 @@
 <?php 
 	session_start();
 	//print_r($_SESSION);
+	if(isset($_SESSION['submitted']){
+		header('Location: https://stormy-spire-65023.herokuapp.com/answers.php');
+	}
 ?>
 
 <!doctype html>
@@ -45,7 +48,7 @@
 		<input type="radio" name="nav" value="search" required="required">The Search Bar<br>
 		<input type="radio" name="nav" value="links" required="required">The links inside the page body<br>
 		
-		<input type="submit" name="submit"/>
+		<input type="submit" name="Submit"/>
 		
 	</form>
 	

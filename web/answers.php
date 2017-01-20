@@ -3,13 +3,8 @@
 	
 	$_SESSION['submitted'] = False;
 
-	if (isset($_POST['submit'])){
+	if (isset($_POST['Submit'])){
 		$_SESSION['submitted'] = True;
-	}
-	
-	if (isset($_SESSION['subbmitted'])
-	{
-		header('location:answers.php', true);
 	}
 ?>
 
