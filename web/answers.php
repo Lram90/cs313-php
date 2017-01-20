@@ -114,7 +114,6 @@
 	echo "<div class='question'><p>How do you usually navigate a web-page?</p><div class='answers'><ul><li>Tabs On the top:   " . $tabs . "</li><li>Search Bar: " . $search
 		 . "</li><li>Links in the page:   ". $links . "</li></ul></div></div>";	 
 	?>
-	<a class="loner">Back To Assignments</a>
 </body>
 </html>
   
