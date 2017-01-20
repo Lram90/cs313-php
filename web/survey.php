@@ -34,6 +34,7 @@
 		
 	while(!feof($myfile)){
 		$current = fgets($myfile);
+		echo $current . "<br>"; 
 		switch($current)
 		{
 			case "rarely":
