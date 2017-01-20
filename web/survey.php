@@ -2,7 +2,7 @@
 	session_start();
 	//print_r($_SESSION);
 	if(!empty($_SESSION['submitted'])){
-		header('Location: https://stormy-spire-65023.herokuapp.com/answers.php');
+		header('Location: https://stormy-spire-65023.herokuapp.com/answers.php', true);
 	}
 ?>
 
