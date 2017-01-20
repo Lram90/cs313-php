@@ -51,6 +51,6 @@
 		
 	</form>
 	
-	<a href="survey.php">>To Results</a>
+	<a href="answers.php">>To Results</a>
 </body>
 </html>
