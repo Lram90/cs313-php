@@ -53,10 +53,13 @@
 		<input type="radio" name="nav" value="links" required="required">The links inside the page body<br>
 		</div></div>
 		
-		<div class="submit"><input type="submit" name="Submit"/></div>
+		<div class="submit">
+		<input type="submit" name="Submit" class="button"/>
+		<a href="answers.php">>To Results</a>
+		</div>
 		
 	</form>
 	
-	<a href="answers.php">>To Results</a>
+	
 </body>
 </html>
