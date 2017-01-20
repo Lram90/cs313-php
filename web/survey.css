@@ -1,18 +1,18 @@
 body{
 	background: linear-gradient(rgb(255, 0, 0), rgb(255, 180, 0), rgb(255, 0, 0));
 	color: white;
-	margin-left: 20%;
+	margin-left: 25%;
 }
 
 h1{
 	font-size: 300%;
-	width: 60%;
+	width: 65%;
 	text-align: center;
 }
 
 h2{
 	font-size: 200%;
-	width: 60%;
+	width: 65%;
 	text-align: center;
 }
 
@@ -36,7 +36,7 @@ div.submit{
 	
 	margin-top: 3%;
 	float: left;
-	width: 75%;
+	width: 65%;
 }
 
 a {
