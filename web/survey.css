@@ -1,15 +1,19 @@
 body{
 	background: linear-gradient(rgb(255, 0, 0), rgb(255, 180, 0), rgb(255, 0, 0));
 	color: white;
-	margin-left: 10%;
+	margin-left: 20%;
 }
 
 h1{
 	font-size: 300%;
+	width: 80%;
+	text-align: center;
 }
 
 h2{
 	font-size: 200%;
+	width: 80%;
+	text-align: center;
 }
 
 div.question{
