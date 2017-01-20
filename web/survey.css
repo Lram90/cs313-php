@@ -13,16 +13,19 @@ h2{
 div.question{
 	margin-left: 5%;
 	margin-top: 2.5%;
+	font-size: 125%;
+	font-weight: bold;
 
 }
 
 div.answers{
 	margin-left: 30px;
 	margin-top: 1%;
-	margin-bottom: 1%;
+	font-size: 75%;
+	font-weight: normal;
 }
 
 div.submit{
-	margin-left: 5%;
+	margin-left: 30px;
 	margin-top: 1%;
 }
