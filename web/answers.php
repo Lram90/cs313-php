@@ -11,7 +11,7 @@
 <html>
 <head>
 	<title>Answers</title>
-	<!--<link rel="stylesheet" type="text/css" href="survey.css">-->
+	<link rel="stylesheet" type="text/css" href="survey.css">
 	<!--<script type="text/javascript" src="week07.js"></script>-->
 </head>
 <body>
