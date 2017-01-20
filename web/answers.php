@@ -6,6 +6,11 @@
 	if (isset($_POST['submit'])){
 		$_SESSION['submitted'] = True;
 	}
+	
+	if (isset($_SESSION['subbmitted'])
+	{
+		header('location:answers.php', true);
+	}
 ?>
 
 <html>
