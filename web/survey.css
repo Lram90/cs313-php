@@ -47,24 +47,30 @@ a {
 	font-weight: Bold;
 }
 
+a.loner {
+	font-size: 150%;
+	color: rgb(250, 250, 250);
+	font-weight: Bold;
+	width: 75%;
+	text-align: center;
+}
+
+
 a:hover{
 	font-size: 200%;
 	font-weight: bold;
 }
 
+a.loner:hover{
+	font-size: 200%;
+	font-weight: bold;
+}
+
+
 input.button {
     width: 10em;  
 	font-size: 150%;
 	margin-right: 7.5%;
-}
-
-p {
-	margin-left: 5%;
-	margin-top: 2.5%;
-	font-size: 150%;
-	font-weight: bold;
-	float: left;
-	width: 40%;
 }
 
 li{
