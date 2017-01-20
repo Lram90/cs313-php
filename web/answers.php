@@ -99,20 +99,20 @@
 	}
     fclose($myfile);
 	
-	echo "<div class='question'><p>How often do you use the internet?</p><ul><li>Rarely:   " . $rarely
+	echo "<div class='question'><p>How often do you use the internet?</p><div class='answers'><ul><li>Rarely:   " . $rarely
 	     . "</li><li>Sometimes:   " . $sometimes . "</li><li>Often:   " . $often
-		 . "</li><li> All The Time:   ". $allTheTime . "</li></ul></div>";
+		 . "</li><li> All The Time:   ". $allTheTime . "</li></ul></div></div>";
 	
-	echo "<div class='question'><p>What do you do most online?</p><ul><li>Use Social Media:   " . $socialMedia
+	echo "<div class='question'><p>What do you do most online?</p><div class='answers'><ul><li>Use Social Media:   " . $socialMedia
 	     . "</li><li>Play Video Games:   " . $playingGames . "</li><li>Shop:   " . $shop
-		 . "</li><li>Watch Videos:   ". $watch . "</li><li>Research: " . $research . "</li></ul></div>";
+		 . "</li><li>Watch Videos:   ". $watch . "</li><li>Research: " . $research . "</li></ul></div></div>";
 	
-	echo "<div class='question'><p>What device are you usually online with?</p><ul><li>Desktop:   " . $desktop
+	echo "<div class='question'><p>What device are you usually online with?</p><div class='answers'><ul><li>Desktop:   " . $desktop
 	     . "</li><li>Laptop:   " . $laptop . "</li><li>Tablet:   " . $tablet
-		 . "</li><li> Smart Phone:   ". $phone . "</li><li>Video Game Console: " . $console . "</li></ul></div>";
+		 . "</li><li> Smart Phone:   ". $phone . "</li><li>Video Game Console: " . $console . "</li></ul></div></div>";
 
-	echo "<div class='question'><p>How do you usually navigate a web-page?</p><ul><li>Tabs On the top:   " . $tabs . "</li><li>Search Bar: " . $search
-		 . "</li><li>Links in the page:   ". $links . "</li></ul></div>";	 
+	echo "<div class='question'><p>How do you usually navigate a web-page?</p><div class='answers'><ul><li>Tabs On the top:   " . $tabs . "</li><li>Search Bar: " . $search
+		 . "</li><li>Links in the page:   ". $links . "</li></ul></div></div>";	 
 	?>
 	<a class="loner">Back To Assignments</a>
 </body>
