@@ -34,8 +34,6 @@
 		
 	while(!feof($myfile)){
 		$current = fgets($myfile);
-		echo $current . "<br>"; 
-		echo "parsing!\n";
 		switch($current)
 		{
 			case "rarely\n":
@@ -97,7 +95,18 @@
 	
 	echo "<p>How often do you use the internet?</p><ul><li>Rarely:   " . $rarely
 	     . "</li><li>Sometimes:   " . $sometimes . "</li><li>Often:   " . $often
-		 . "</li><li> All The Time:   ". $allTheTime;
+		 . "</li><li> All The Time:   ". $allTheTime . "</li></ul>";
+	
+	echo "<p>What do you do most online?</p><ul><li>Use Social Media:   " . $socialMedia
+	     . "</li><li>Play Video Games:   " . $playingGames . "</li><li>Shop:   " . $shop
+		 . "</li><li>Watch Videos:   ". $watch . "</li><li>Research: " . $research . "</li></ul>";
+	
+	echo "<p>What device are you usually online with?</p><ul><li>Desktop:   " . $desktop
+	     . "</li><li>Laptop:   " . $laptop . "</li><li>Tablet:   " . $tablet
+		 . "</li><li> Smart Phone:   ". $phone . "</li><li>Video Game Console: " . $console . "</li></ul>";
+
+	echo "<p>How do you usually navigate a web-page?</p><ul><li>Tabs On the top:   " . $tabs . "</li><li>Search Bar: " . $search
+		 . "</li><li>Links in the page:   ". $links . "</li></ul>";	 
 	?>
 	
 </body>
