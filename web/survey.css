@@ -11,13 +11,15 @@ h2{
 }
 
 div.question{
-	
+	margin-left: 5%;
 	margin-top: 2.5%;
 	margin-bottom: 2.5%;
 }
 
-div.answer{
-	margin-left: 500px;
+div.answers{
+	margin-left: 10%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
 }
 
 div.submit{
