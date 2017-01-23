@@ -1,0 +1,41 @@
+div#first{
+	font-size: 15px;
+	background-color: red;
+	color: white;
+	float: left;
+	margin-left: 5px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+div#first:hover{
+	font-weight: bold;
+}
+
+div#second{
+	font-size: 20px;
+	background-color: blue;
+	color: white;
+	float: left;
+	margin-left: 5px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+div#second:hover{
+	font-weight: bold;
+}
+
+div#third{
+	font-size: 25px;
+	color: white;
+	background-color: green;
+	float: left;
+	margin-left: 5px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+div#third:hover{
+	font-weight: bold;
+}
