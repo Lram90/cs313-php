@@ -4,11 +4,11 @@
  
  $id = $_GET['id'];
 
-	echo $id;
+
  $final_query = "SELECT * FROM Scriptures WHERE id= ".$id;
- echo $final_query;
+
  $final_results = pg_query($final_query);
- echo $final_results;
+
  $d_row = pg_fetch_assoc($final_results);
  
  printf ("<strong>%s %s: %s - </strong> \"%s\" <br>",htmlspecialchars($d_row['book']), htmlspecialchars($d_row['chapter']), htmlspecialchars($d_row['verse']), htmlspecialchars($d_row['content']));
