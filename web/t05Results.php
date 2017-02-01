@@ -10,7 +10,6 @@
 				$book = $_POST["book_search"];
 				
 				$search_query = "SELECT * FROM Scriptures WHERE book= '".$book."'"; 
-				echo $search_query;
 				$search_result = pg_query($search_query); 
 				if (!$search_result) { 
 					echo "Problem with query " . $search_query . "<br/>"; 
@@ -18,7 +17,7 @@
 					exit(); 
 				} 
 				while($row = pg_fetch_assoc($search_result)) {
-				printf ("<strong>%s %s: %s - </strong> \"%s\" <br>",htmlspecialchars($row['book']), htmlspecialchars($row['chapter']), htmlspecialchars($row['verse']), htmlspecialchars($row['content']));
+				printf ("<strong><a href='details.php?id=\'.$row[\'id\'].\'' >%s %s: %s - </a></strong><br>",htmlspecialchars($row['book']), htmlspecialchars($row['chapter']), htmlspecialchars($row['verse']));
 				}
 				
 			}
