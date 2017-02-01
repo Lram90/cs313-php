@@ -18,7 +18,7 @@
             printf ("<strong>%s %s: %s - </strong> \"%s\" <br>",htmlspecialchars($myrow['book']), htmlspecialchars($myrow['chapter']), htmlspecialchars($myrow['verse']), htmlspecialchars($myrow['content']));
         } 
         ?> 
-		<form action="teach05.php" method="get" id="ourform">
+		<form action="t05Results.php" method="post" id="ourform">
 		<fieldset>
 		<label>Enter Book Name:</label>
 		<input id="book_search" name="book_search" type="text" />
@@ -27,9 +27,9 @@
 		</form>
 		<?php
 		
-			if(isset($_GET["submit"])){
+			if(isset($_POST["submit"])){
 				echo "HIT";
-				$book = $_GET["book_search"];
+				$book = $_POST["book_search"];
 				$search_query = "SELECT * FROM Scriptures WHERE book= '%".$book."%'"; 
 
 				$search_result = pg_query($search_query); 
