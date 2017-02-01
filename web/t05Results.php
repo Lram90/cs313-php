@@ -9,7 +9,7 @@
 				
 				$book = $_POST["book_search"];
 				
-				$search_query = "SELECT * FROM Scriptures WHERE book= '%".$book."%'"; 
+				$search_query = "SELECT * FROM Scriptures WHERE book= '".$book."'"; 
 				echo $search_query;
 				$search_result = pg_query($search_query); 
 				if (!$search_result) { 
