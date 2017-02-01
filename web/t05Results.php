@@ -6,11 +6,11 @@
  password=53f15317bc3fba7ca9c92f06895fa510ae3cefe2d63972966a0c2140559b6b56');
  
 			if(isset($_POST["submit"])){
-				echo "HIT";
+				
 				$book = $_POST["book_search"];
-				echo $book;
+				
 				$search_query = "SELECT * FROM Scriptures WHERE book= '%".$book."%'"; 
-
+				echo $search_query;
 				$search_result = pg_query($search_query); 
 				if (!$search_result) { 
 					echo "Problem with query " . $search_query . "<br/>"; 
