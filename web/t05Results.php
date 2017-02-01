@@ -8,6 +8,7 @@
 			if(isset($_POST["submit"])){
 				echo "HIT";
 				$book = $_POST["book_search"];
+				echo $book;
 				$search_query = "SELECT * FROM Scriptures WHERE book= '%".$book."%'"; 
 
 				$search_result = pg_query($search_query); 
