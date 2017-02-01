@@ -18,6 +18,31 @@
             printf ("<strong>%s %s: %s - </strong> \"%s\" <br>",htmlspecialchars($myrow['book']), htmlspecialchars($myrow['chapter']), htmlspecialchars($myrow['verse']), htmlspecialchars($myrow['content']));
         } 
         ?> 
-        </table> 
+		<form action="" method="get" id="ourform">
+		<fieldset>
+		<label>Enter Book Name:</label>
+		<input id="book_search" name="book_search" type="text" />
+		<input type="submit" value="Search" onclick="search()"/>
+		</fieldset>
+		</form>
+		<?php
+			$book = $_GET['book_search'];
+		
+			function search(){
+				$search_query = "SELECT * FROM Scriptures WHERE book= '%".$book."%'"; 
+
+				$search_result = pg_query($search_query); 
+				if (!$search_result) { 
+					echo "Problem with query " . $search_query . "<br/>"; 
+					echo pg_last_error(); 
+					exit(); 
+				} 
+				while($row = pg_fetch_assoc($search_result)) {
+				printf ("<strong>%s %s: %s - </strong> \"%s\" <br>",htmlspecialchars($myrow['book']), htmlspecialchars($myrow['chapter']), htmlspecialchars($myrow['verse']), htmlspecialchars($myrow['content']))
+				}
+				
+			}
+		
+		?>
     </body> 
 </html> 
