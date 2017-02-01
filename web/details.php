@@ -5,7 +5,7 @@
  $id = $_GET['id'];
 
 	echo $id;
- $final_query = "SELECT * FROM Scriptures WHERE id= '".$id."'";
+ $final_query = "SELECT * FROM Scriptures WHERE id= ".$id;
  echo $final_query;
  $final_results = pg_query($final_query);
  echo final_results;
