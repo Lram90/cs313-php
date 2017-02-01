@@ -22,13 +22,13 @@
 		<fieldset>
 		<label>Enter Book Name:</label>
 		<input id="book_search" name="book_search" type="text" />
-		<input type="submit" value="Search" onclick="search()"/>
+		<input type="submit" value="Search"/>
 		</fieldset>
 		</form>
 		<?php
-			$book = $_GET['book_search'];
 		
-			function search(){
+			if(isset($_GET['book_search'])){
+				$book = $_GET['book_search'];
 				$search_query = "SELECT * FROM Scriptures WHERE book= '%".$book."%'"; 
 
 				$search_result = pg_query($search_query); 
