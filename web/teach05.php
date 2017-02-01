@@ -15,7 +15,7 @@
         } 
 
         while($myrow = pg_fetch_assoc($result)) { 
-            printf ("<strong>%s %s: %s - </strong> \"%s\"",htmlspecialchars($myrow['book']), htmlspecialchars($myrow['chapter']), htmlspecialchars($myrow['verse']), htmlspecialchars($myrow['content']));
+            printf ("<strong>%s %s: %s - </strong> \"%s\" <br>",htmlspecialchars($myrow['book']), htmlspecialchars($myrow['chapter']), htmlspecialchars($myrow['verse']), htmlspecialchars($myrow['content']));
         } 
         ?> 
         </table> 
