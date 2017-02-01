@@ -27,7 +27,7 @@
 		</form>
 		<?php
 		
-			if(isset($_GET["book_search"])){
+			if(isset($_GET["submit"])){
 				$book = $_GET["book_search"];
 				$search_query = "SELECT * FROM Scriptures WHERE book= '%".$book."%'"; 
 
