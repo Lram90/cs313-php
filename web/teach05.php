@@ -33,7 +33,7 @@
         } 
 
         while($myrow = pg_fetch_assoc($result)) { 
-            printf ("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>", $myrow['id'], htmlspecialchars($myrow['book']), htmlspecialchars($myrow['chapter']), htmlspecialchars($myrow['verse']), htmlspecialchars($myrow['content']));
+            printf ("<strong><tr><td>%s </td><td>%s:</td><td>%s - </td><td>&lq;%s&rq;</td></tr></strong>",htmlspecialchars($myrow['book']), htmlspecialchars($myrow['chapter']), htmlspecialchars($myrow['verse']), htmlspecialchars($myrow['content']));
         } 
         ?> 
         </table> 
