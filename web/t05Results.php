@@ -17,7 +17,7 @@
 					exit(); 
 				} 
 				while($row = pg_fetch_assoc($search_result)) {
-				printf ("<strong><a href='details.php?id=".$row['id']." >%s %s: %s - </a></strong><br>",htmlspecialchars($row['book']), htmlspecialchars($row['chapter']), htmlspecialchars($row['verse']));
+				printf ("<strong><a href='details.php?id=".$row["id"]."'>%s %s: %s </a></strong><br>",htmlspecialchars($row['book']), htmlspecialchars($row['chapter']), htmlspecialchars($row['verse']));
 				}
 				
 			}
