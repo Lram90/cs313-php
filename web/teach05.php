@@ -18,7 +18,7 @@
             printf ("<strong>%s %s: %s - </strong> \"%s\" <br>",htmlspecialchars($myrow['book']), htmlspecialchars($myrow['chapter']), htmlspecialchars($myrow['verse']), htmlspecialchars($myrow['content']));
         } 
         ?> 
-		<form action="" method="get" id="ourform">
+		<form action="teach05.php" method="get" id="ourform">
 		<fieldset>
 		<label>Enter Book Name:</label>
 		<input id="book_search" name="book_search" type="text" />
@@ -38,7 +38,7 @@
 					exit(); 
 				} 
 				while($row = pg_fetch_assoc($search_result)) {
-				printf ("<strong>%s %s: %s - </strong> \"%s\" <br>",htmlspecialchars($myrow['book']), htmlspecialchars($myrow['chapter']), htmlspecialchars($myrow['verse']), htmlspecialchars($myrow['content']))
+				printf ("<strong>%s %s: %s - </strong> \"%s\" <br>",htmlspecialchars($myrow['book']), htmlspecialchars($myrow['chapter']), htmlspecialchars($myrow['verse']), htmlspecialchars($myrow['content']));
 				}
 				
 			}
