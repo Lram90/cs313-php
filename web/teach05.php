@@ -1,24 +1,6 @@
 <!doctype html>
 <html> 
     <body> 
-        <table border="0" cellspacing="0" cellpadding="0"> 
-            <tr> 
-                <th> 
-                    Scripture ID 
-                </th> 
-                <th> 
-                    Book 
-                </th> 
-                <th> 
-                    Chapter 
-                </th> 
-                <th> 
-                    Verse 
-                </th> 
-				<th> 
-                    Content 
-                </th> 
-            </tr> 
         <?php 
         $db = pg_connect('host=ec2-54-243-38-139.compute-1.amazonaws.com dbname=d89833096k0ivr user=uhieutjjtvpbri
  password=53f15317bc3fba7ca9c92f06895fa510ae3cefe2d63972966a0c2140559b6b56');
@@ -33,7 +15,7 @@
         } 
 
         while($myrow = pg_fetch_assoc($result)) { 
-            printf ("<strong><tr><td>%s </td><td>%s:</td><td>%s - </td></strong><td>\"%s\"</td></tr>",htmlspecialchars($myrow['book']), htmlspecialchars($myrow['chapter']), htmlspecialchars($myrow['verse']), htmlspecialchars($myrow['content']));
+            printf ("<strong>%s %s: %s - </strong> \"%s\"",htmlspecialchars($myrow['book']), htmlspecialchars($myrow['chapter']), htmlspecialchars($myrow['verse']), htmlspecialchars($myrow['content']));
         } 
         ?> 
         </table> 
