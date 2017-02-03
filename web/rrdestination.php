@@ -25,7 +25,6 @@
 
         $query = "SELECT * FROM public.user";
 
-		echo $query;
         $result = pg_query($query); 
         if (!$result) { 
             echo "Problem with query " . $query . "<br/>"; 
@@ -34,9 +33,9 @@
         } 
 		
 		
-        //while($myrow = pg_fetch_assoc($result)) { 
-          //echo $myrow['user_name'];
-        //}		
+        while($myrow = pg_fetch_assoc($result)) { 
+          echo $myrow['user_name'];
+        }		
         ?> 
 </body>
 
