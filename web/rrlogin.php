@@ -53,7 +53,7 @@ span.psw {
 
 <h2>Login Form</h2>
 
-<form action="rrindex.php" onblur()="set_session()">
+<form action="rrindex.php" method="post" >
 
   <div class="container">
     <label><b>Username</b></label>
@@ -64,15 +64,6 @@ span.psw {
         
     <button type="submit">Login</button>
   </div>
-
-  <?php
-  
-  function set_session(){
-	  $_SESSION['user'] = $_POST['uname'];
-	  $_SESSION['pass'] = $_POST['psw'];
-  }
-  
-  ?>
 </form>
 
 
