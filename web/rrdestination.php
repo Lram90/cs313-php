@@ -27,9 +27,9 @@
 		 if(isset($_POST["submit"])){
 			 $query = "SELECT * FROM public.user u, public.pickup p, public.destination d, public.cost c WHERE u.user_id = p.user_id AND u.user_id = d.user_id AND u.user_id = c.user_id AND d.destination_location =" . $_POST['location'];
 		 }
-		 
-        $query = "SELECT * FROM public.user u, public.pickup p, public.destination d, public.cost c WHERE u.user_id = p.user_id AND u.user_id = d.user_id AND u.user_id = c.user_id";
-
+		 else{
+			$query = "SELECT * FROM public.user u, public.pickup p, public.destination d, public.cost c WHERE u.user_id = p.user_id AND u.user_id = d.user_id AND u.user_id = c.user_id";
+		 }
         $result = pg_query($query); 
         if (!$result) { 
             echo "Problem with query " . $query . "<br/>"; 
