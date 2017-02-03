@@ -1,0 +1,47 @@
+body{
+	margin-left: 10%;
+}
+
+div.head{
+	float: left;
+	width: 90%;
+
+}
+
+div.tab{
+
+	float: left;
+	text-align: center;
+}
+
+ul.tabs{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+ul.tabs li {
+	float: left;
+	margin: 20px;
+}
+
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+div.main{
+	float: left;
+	width: 90%;
+}
+
+a.bodylink {
+}
