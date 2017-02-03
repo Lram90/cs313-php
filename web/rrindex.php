@@ -20,6 +20,7 @@
 <h1>Rexburg Rides</h1>
 </div>
 <?php echo $_SESSION['user'];?>
+<?php echo $_POST['uname'];?>
 <div class="tab">
 	<ul class="tabs">
 		<li><a class="tablink" href="rrdestination.php">Rides by Destination</a>
@@ -38,7 +39,7 @@ high width, low height-->
 <form id="ride">
 
 <p>User Name:</p>
-<input type="text" id="user" value="<?php echo $_POST['uname'];?>" readonly />
+<input type="text" id="user" readonly />
 
 <p>Pick-up location:</p>
 <input type="text" id="origin" onchange="update()"/>
