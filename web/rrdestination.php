@@ -15,12 +15,13 @@
 <h1>Search by Destination</h1>
 
 <h3>Enter Destination Address:</h3>
-<form id="myForm" method="get" action="rrdestination.php" />
+<form id="myForm" method="get" action="rrdestination.php" onsubmit="display()" />
 <input type="text" name="location" />
 <input type="submit" name="submit" value="Search" />
 </form>
 
 <?php 
+function display(){
 	if(isset($_POST["submit"])){
          $db = pg_connect('host=ec2-54-243-38-139.compute-1.amazonaws.com dbname=d89833096k0ivr user=uhieutjjtvpbri password=53f15317bc3fba7ca9c92f06895fa510ae3cefe2d63972966a0c2140559b6b56');
 
@@ -45,6 +46,7 @@
 
 			echo "</table>";
 	}
+}
         ?> 
 </body>
 
