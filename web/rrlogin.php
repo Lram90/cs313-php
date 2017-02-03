@@ -30,11 +30,6 @@ button {
     width: 100%;
 }
 
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
 
 .container {
     padding: 16px;
@@ -59,7 +54,7 @@ span.psw {
 
 <h2>Login Form</h2>
 
-<form action="rrindex.php" onsubmit="set_session()">
+<form action="rrindex.php" onblur()="set_session()">
 
   <div class="container">
     <label><b>Username</b></label>
@@ -69,13 +64,16 @@ span.psw {
     <input type="password" placeholder="Enter Password" name="psw" required>
         
     <button type="submit">Login</button>
-    <input type="checkbox" checked="checked"> Remember me
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
+  <?php
+  
+  function set_session(){
+	  $_SESSION['user'] = $_POST['uname'];
+	  $_SESSION['pass'] = $_POST['psw'];
+  }
+  
+  ?>
 </form>
 
 

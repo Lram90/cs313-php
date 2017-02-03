@@ -36,8 +36,6 @@ high width, low height-->
 	$user_name = $_SESSION['user'];
 	echo "<p>User Name:</p><input type='text' id='user' value='".$user_name."' readonly />";
 ?>
-<p>User Name:</p>
-<input type="text" id="user" />
 
 <p>Pick-up location:</p>
 <input type="text" id="origin" onchange="update()"/>
@@ -58,7 +56,7 @@ high width, low height-->
 <p>Trip Time:</p>
 <input type="text" id="duration" readonly />
 
- <script async defer
+<!-- <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7ZXhSJiWSb46IF5UfcIi6UQik29F78To&callback=initMap">
 </script>
 <script>
@@ -102,7 +100,7 @@ function initMap() {
     }
   });
 }
-</script>
+</script> -->
 
 </form>
 
