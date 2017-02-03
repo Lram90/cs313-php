@@ -32,9 +32,15 @@
             exit(); 
         } 
 		
+		echo "<table><tr><th>User Name</th><th>Pickup Location</th><th>Pickup Time</th><th>Destination Location</th><th>Estimated Arrival Time</th><th>distance</th><th>Total</th></tr>";
+		
+		//user_name pickup_location pickup_time destination_location estimated_arrival distance total 
+		
         while($myrow = pg_fetch_assoc($result)) { 
-          echo $myrow['user_name'] . '<br>' . $myrow['total'] . '<br>';
-        }		
+          echo "<tr><td>" . $myrow['user_name'] . '</td><td>' . $myrow['pickup_location'] . '</td><td>' . $myrow['pickup_time'] . '</td><td>' . $myrow['destination_location'] . '</td><td>' . $myrow['estimated_arrival'] . '</td><td>' . $myrow['distance'] . '</td><td>' . $myrow['total'] . '</td></tr>';
+        }	
+
+			echo "</table>";
         ?> 
 </body>
 
