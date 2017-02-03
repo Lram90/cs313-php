@@ -31,12 +31,14 @@
             echo pg_last_error(); 
             exit(); 
         } 
-
+		else{
+			echo "succeeded!!!";
+		}
 		
 		
-        while($myrow = pg_fetch_assoc($result)) { 
-          echo $myrow['user_name'];
-        }
+        //while($myrow = pg_fetch_assoc($result)) { 
+          //echo $myrow['user_name'];
+        //}
 	}		
         ?> 
 </body>
