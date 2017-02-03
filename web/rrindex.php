@@ -32,11 +32,9 @@ high width, low height-->
 <h2>Ride Order Form</h2>
 
 <form id="ride">
-<?php
-	
-	echo "<p>User Name:</p><input type='text' id='user' name='user' readonly />";
-	$user = $_SESSION['user'];
-?>
+
+<p>User Name:</p>
+<input type="text" id="user" value="<?php echo $_SESSION['user'];?>" readonly />
 
 <p>Pick-up location:</p>
 <input type="text" id="origin" onchange="update()"/>
