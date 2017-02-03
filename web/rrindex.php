@@ -60,6 +60,11 @@ high width, low height-->
 <p>Trip Time:</p>
 <input type="text" id="duration" readonly />
 
+<?php var_dump($_POST); ?>
+
+<?php
+print_r($_SESSION);
+?>
 <!-- <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7ZXhSJiWSb46IF5UfcIi6UQik29F78To&callback=initMap">
 </script>
