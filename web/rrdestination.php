@@ -32,10 +32,10 @@
             exit(); 
         } 
 
-		printf('<t><tr><th>User Name</th><th>Pickup Location</th><th>Pickup Time</th><th>Extra Considerations</th><th>Destination</th><th>Estimated Time of Arriaval</th><th>distance</th><th>Total Price</th></tr>');
+		
 		
         while($myrow = pg_fetch_assoc($result)) { 
-          printf ("<tr><td>%s</td><td></tr>", htmlspecialchars($myrow['user_name']));
+          printf ("%s", htmlspecialchars($myrow['user_name']));
         }
 	}		
         ?> 
