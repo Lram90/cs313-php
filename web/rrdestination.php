@@ -25,6 +25,7 @@
 
         $query = 'SELECT * FROM public.user u, public.pickup p, public.destination d, public.cost c WHERE u.user_id = p.user_id AND u.user_id = d.user_id AND u.user_id = c.user_id;'; 
 
+		echo $query;
         /*$result = pg_query($query); 
         if (!$result) { 
             echo "Problem with query " . $query . "<br/>"; 
