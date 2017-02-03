@@ -31,9 +31,6 @@
             echo pg_last_error(); 
             exit(); 
         } 
-		else{
-			echo "succeeded!!!";
-		}
 		
 		
         //while($myrow = pg_fetch_assoc($result)) { 
