@@ -25,14 +25,14 @@
 
         $query = 'SELECT * FROM public.user u, public.pickup p, public.destination d, public.cost c WHERE u.user_id = p.user_id AND u.user_id = d.user_id AND u.user_id = c.user_id;'; 
 
-        /*$result = pg_query($query); 
+        $result = pg_query($query); 
         if (!$result) { 
             echo "Problem with query " . $query . "<br/>"; 
             echo pg_last_error(); 
             exit(); 
         } 
 
-		printf('<t><tr><th>User Name</th><th>Pickup Location</th><th>Pickup Time</th><th>Extra Considerations</th><th>Destination</th><th>Estimated Time of Arriaval</th><th>distance</th><th>Total Price</th></tr>');
+		/*printf('<t><tr><th>User Name</th><th>Pickup Location</th><th>Pickup Time</th><th>Extra Considerations</th><th>Destination</th><th>Estimated Time of Arriaval</th><th>distance</th><th>Total Price</th></tr>');
 		
         while($myrow = pg_fetch_assoc($result)) { 
             printf ("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>",htmlspecialchars($myrow['user_name']), htmlspecialchars($myrow['pickup_location']), htmlspecialchars($myrow['pickup_time']), htmlspecialchars($myrow['extra_considerations']), htmlspecialchars($myrow['destination_location']), htmlspecialchars($myrow['estimated_arrival']), htmlspecialchars($myrow['distance']) htmlspecialchars($myrow['total']));
