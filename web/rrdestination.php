@@ -34,11 +34,11 @@
 
 		printf('<t><tr><th>User Name</th><th>Pickup Location</th><th>Pickup Time</th><th>Extra Considerations</th><th>Destination</th><th>Estimated Time of Arriaval</th><th>distance</th><th>Total Price</th></tr>');
 		
-        /*while($myrow = pg_fetch_assoc($result)) { 
-            printf ("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>",htmlspecialchars($myrow['user_name']), htmlspecialchars($myrow['pickup_location']), htmlspecialchars($myrow['pickup_time']), htmlspecialchars($myrow['extra_considerations']), htmlspecialchars($myrow['destination_location']), htmlspecialchars($myrow['estimated_arrival']), htmlspecialchars($myrow['distance']) htmlspecialchars($myrow['total']));
+        while($myrow = pg_fetch_assoc($result)) { 
+          printf ("<tr><td>%s</td><td></tr>", htmlspecialchars($myrow['user_name']));
         }
 	}		
-        */?> 
+        ?> 
 </body>
 
 </html>
