@@ -15,7 +15,7 @@
 <h1>Search by Destination</h1>
 
 <h3>Enter Destination Address:</h3>
-<form id="myForm" method="get" />
+<form id="myForm" method="get" action="rrdestination.php" />
 <input type="text" name="location" />
 <input type="submit" name="submit" value="Search" />
 </form>
