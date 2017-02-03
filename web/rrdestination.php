@@ -23,7 +23,7 @@
 <?php 
          $db = pg_connect('host=ec2-54-243-38-139.compute-1.amazonaws.com dbname=d89833096k0ivr user=uhieutjjtvpbri password=53f15317bc3fba7ca9c92f06895fa510ae3cefe2d63972966a0c2140559b6b56');
 
-        $query = "SELECT * FROM public.user u, public.pickup p, public.destination d, public.cost c";
+        $query = "SELECT * FROM public.user, public.pickup, public.destination, public.cost";
 
         $result = pg_query($query); 
         if (!$result) { 
@@ -33,7 +33,7 @@
         } 
 		
         while($myrow = pg_fetch_assoc($result)) { 
-          echo $myrow['user_name'] . 'br' . $myrow['total'] . '<br>';
+          echo $myrow['user_name'] . '<br>' . $myrow['total'] . '<br>';
         }		
         ?> 
 </body>
