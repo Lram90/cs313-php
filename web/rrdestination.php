@@ -36,9 +36,8 @@
 		
         //while($myrow = pg_fetch_assoc($result)) { 
           //echo $myrow['user_name'];
-        //}
-	}		
-        */?> 
+        //}		
+        ?> 
 </body>
 
 </html>
