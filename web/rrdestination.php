@@ -35,7 +35,7 @@
 		
 		
         while($myrow = pg_fetch_assoc($result)) { 
-          printf ("%s", htmlspecialchars($myrow['user_name']));
+          echo $myrow['user_name'];
         }
 	}		
         ?> 
