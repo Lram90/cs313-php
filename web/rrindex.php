@@ -1,5 +1,9 @@
 <?php
 	session_start();
+	$_SESSION['user'] = $_POST['uname'];
+	$_SESSION['pass'] = $_POST['psw'];
+
+  
 ?>
 
 <!doctype html>
@@ -15,7 +19,7 @@
 <img></img><!--get a logo figured out for here-->
 <h1>Rexburg Rides</h1>
 </div>
-
+<?php echo $_SESSION['user'];?>
 <div class="tab">
 	<ul class="tabs">
 		<li><a class="tablink" href="rrdestination.php">Rides by Destination</a>
