@@ -2,8 +2,6 @@
 	session_start();
 	$_SESSION['user'] = $_POST['uname'];
 	$_SESSION['pass'] = $_POST['psw'];
-
-  
 ?>
 
 <!doctype html>
@@ -22,7 +20,7 @@
 <div class="tab">
 	<ul class="tabs">
 		<li><a class="tablink" href="rrdestination.php">Rides by Destination</a>
-		<li><a class="tablink" href="rrnexthours.php">Next Few Hours</a>
+		<li><a class="tablink" href="rrorigin.php">Rides by Origin</a>
 		<li><a class="tablink" href="rrcustomer.php">Rides by Customer</a>
 	</ul>	
 </div><!--implement navagation tabs directly under the header here,
@@ -108,9 +106,9 @@ function initMap() {
 
 <h3>Are you a driver? Try These Links: </h3>
 <!--<a href="rrdriver.php">Drivers' Page</a> Direct links?-->
-<a class="bodylink" href="rrday.php">Daily Schedule</a><br>
-<a class="bodylink" href="rrnexthours.php">Next Few Hours</a><br>
-<a class="bodylink" href="rrcustomer.php">Schedule by Customer</a><br>
+<a class="bodylink" href="rrdestination.php">Rides by Destination</a><br>
+<a class="bodylink" href="rrorigin.php">Rides by Origin</a><br>
+<a class="bodylink" href="rrcustomer.php">Rides by Customer</a>
 </div>
 
 
