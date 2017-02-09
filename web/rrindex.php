@@ -81,7 +81,7 @@ high width, low height-->
 <p>Total:</p>
 <input type="text" id="total" name="total" readonly required />
 
-<button type="submit" value="Order" />
+<input type="submit" value="Order" />
 
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7ZXhSJiWSb46IF5UfcIi6UQik29F78To&callback=initMap">
