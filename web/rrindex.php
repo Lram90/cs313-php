@@ -82,7 +82,6 @@ high width, low height-->
 <input type="text" id="total" name="total" readonly required />
 
 <button type="submit" value="Order" />
-</form>
 
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7ZXhSJiWSb46IF5UfcIi6UQik29F78To&callback=initMap">
