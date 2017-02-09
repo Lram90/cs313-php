@@ -81,6 +81,7 @@ high width, low height-->
 <p>Total:</p>
 <input type="text" id="total" name="total" readonly required />
 
+<button type="submit" value="Order" />
 </form>
 
 <script async defer
