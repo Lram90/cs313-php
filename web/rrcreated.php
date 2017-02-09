@@ -24,16 +24,9 @@
 	 
 	 echo $query;
 	 
-       $preparedStatement = pg_prepare($query);
+      $preparedStatement = $db->prepare($query);
 
-	   echo $preparedStatement;
-	   
-	   echo "<br>" . $name . "hello";
-	   $preparedStatement->bindValue(':name', $name);
-	   echo "<br>" . $name . "1";
-	   
-	   $preparedStatement->bindValue(':password', $password);
-	   echo "<br>" . $name. "2";
+	  $preparedStatement->execute(array('user_name' => $name, 'password' => $password));
 	   
 	   //$preparedStatement->execute();
 		
