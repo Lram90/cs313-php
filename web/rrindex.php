@@ -16,14 +16,14 @@
 	//$valid_user = FALSE;
 	//echo "<br>" $valid_user;
  
-	//$testQuery = $dbh->prepare('SELECT user_id FROM public.user WHERE user_name = :name');
-	//echo "<br>" . $testQuery;
-	//$tesResult = $testQuery->execute( array('name' => $name) );
+	$testQuery = $dbh->prepare('SELECT user_id FROM public.user WHERE user_name = :name');
+	echo "<br>" . $testQuery;
+	$tesResult = $testQuery->execute( array('name' => $name) );
 	
-	//while ($row = pg_fetch_assoc($testResult)){
-		//	$_SESSION['id'] = $row['user_id'];
-			//echo "<br>" . $_SESSION['id'];
-	//}
+	while ($row = pg_fetch_assoc($testResult)){
+			$_SESSION['id'] = $row['user_id'];
+			echo "<br>" . $_SESSION['id'];
+	}
  
 	//echo "<br>" . $testResult;
  
