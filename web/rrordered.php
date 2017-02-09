@@ -28,16 +28,7 @@
 	$total = $_POST['total'];
 	
 	
-	echo $name . $origin . $date . $time . $extra . $id;
-	
-	
-	
-	$destination = $_POST['destination'];
-	$duration = $_POST['duration'];
-	
-	
-	$distance = $_POST['distance'];
-	$total = $_POST['total'];)
+	echo $name . $origin . $date . $time . $extra . $id . $destination . $duration . $distance . $total;
 	
 	
 	$pStmt = $dbh->prepare('INSERT INTO public.pickup(pickup_location, pickup_time, extra_considerations, user_id, pickup_date) VALUES(:origin, :time, :extra, :id, :date)');
