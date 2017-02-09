@@ -3,7 +3,7 @@
 	$_SESSION['user'] = $_POST['uname'];
 	$_SESSION['pass'] = $_POST['psw'];
 	
-	echo $_SESSION['user'] 
+	echo $_SESSION['user']; 
 	echo $_SESSION['pass'];
 	
 	$dbh = new PDO("pgsql:host=ec2-54-243-38-139.compute-1.amazonaws.com;port=5432;dbname=d89833096k0ivr", "uhieutjjtvpbri", "53f15317bc3fba7ca9c92f06895fa510ae3cefe2d63972966a0c2140559b6b56");
