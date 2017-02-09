@@ -1,6 +1,5 @@
 <?php
  session_start();
- echo $_POST['newUserName'];
  ?>
  
  <!doctype html>
@@ -12,17 +11,17 @@
 	 $name = $_POST['newUserName'];
 	 $code = $_POST['code'];
 
-	 $query = 'INSERT INTO public.user(user_name, password) VALUES(:name, :code)';
+	 //$query = 'INSERT INTO public.user(user_name, password) VALUES(:name, :code)';
 	 
-       $preparedStatement = pg_prepare($query);
+       //$preparedStatement = pg_prepare($query);
 
-	   $preparedStatement->bindValue(':name', $name);
-	   $preparedStatement->bindValue(':code', $code);
+	   //$preparedStatement->bindValue(':name', $name);
+	   //$preparedStatement->bindValue(':code', $code);
 	   
 	   
-	   $preparedStatement->execute();
+	   //$preparedStatement->execute();
 		
-	echo "<h1>Account created Successfully</h1><a href='rrlogin.php'>Back to Login</a>";
+	//echo "<h1>Account created Successfully</h1><a href='rrlogin.php'>Back to Login</a>";
  ?>
  </body>
  </html>
