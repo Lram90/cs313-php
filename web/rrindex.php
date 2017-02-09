@@ -21,21 +21,11 @@
 	$row = $testQuery->fetch();
 	$_SESSION['id'] = $row['user_id'];
 	echo "<br>" . $_SESSION['id'];
-	
- 
-	//echo "<br>" . $testResult;
- 
-	//if ($testResult) { 
-		//$valid_user = TRUE;
-		
-		//}
-	//}
- 
-	//if (!$valid_user){
-		//$message = "Your User Name or Password do not match";
-		//echo "<script type='text/javascript'>alert('$message');</script>";
-		//header('Location: https://stormy-spire-65023.herokuapp.com/rrlogin.php', true);
-	//}
+	if ($_SESSION['id'] === NULL) {
+		$message = "Your User Name or Password do not match";
+		echo "<script type='text/javascript'>alert('$message');</script>";
+		header('Location: https://stormy-spire-65023.herokuapp.com/rrlogin.php', true);
+	}
 ?>
 
 <!doctype html>
