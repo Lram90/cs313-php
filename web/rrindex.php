@@ -12,29 +12,29 @@
 	
 	echo "<br>" . $name . $code;
 	
-	$valid_user = FALSE;
-	echo "<br>" $valid_user;
+	//$valid_user = FALSE;
+	//echo "<br>" $valid_user;
  
-	$testQuery = $dbh->prepare('SELECT user_id FROM public.user WHERE user_name = :name');
-	echo "<br>" . $testQuery;
-	$tesResult = $testQuery->execute( array('name' => $name) );
+	//$testQuery = $dbh->prepare('SELECT user_id FROM public.user WHERE user_name = :name');
+	//echo "<br>" . $testQuery;
+	//$tesResult = $testQuery->execute( array('name' => $name) );
 	
-	while ($row = pg_fetch_assoc($testResult)){
-			$_SESSION['id'] = $row['user_id'];
-			echo "<br>" . $_SESSION['id'];
-	}
+	//while ($row = pg_fetch_assoc($testResult)){
+		//	$_SESSION['id'] = $row['user_id'];
+			//echo "<br>" . $_SESSION['id'];
+	//}
  
-	echo "<br>" . $testResult;
+	//echo "<br>" . $testResult;
  
-	if ($testResult) { 
-		$valid_user = TRUE;
+	//if ($testResult) { 
+		//$valid_user = TRUE;
 		
-		}
-	}
+		//}
+	//}
  
-	if (!$valid_user){
-		$message = "Your User Name or Password do not match";
-		echo "<script type='text/javascript'>alert('$message');</script>";
+	//if (!$valid_user){
+		//$message = "Your User Name or Password do not match";
+		//echo "<script type='text/javascript'>alert('$message');</script>";
 		//header('Location: https://stormy-spire-65023.herokuapp.com/rrlogin.php', true);
 	}
 ?>
@@ -95,7 +95,7 @@ high width, low height-->
 
 <input type="submit" value="Order" />
 
-<script async defer
+<!--<script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7ZXhSJiWSb46IF5UfcIi6UQik29F78To&callback=initMap">
 </script>
 <script>
@@ -141,7 +141,7 @@ function initMap() {
     }
   });
 }
-</script>
+</script>-->
 
 </form>
 
