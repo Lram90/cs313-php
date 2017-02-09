@@ -10,7 +10,7 @@
 	
 	$dbh = new PDO("pgsql:host=ec2-54-243-38-139.compute-1.amazonaws.com;port=5432;dbname=d89833096k0ivr", "uhieutjjtvpbri", "53f15317bc3fba7ca9c92f06895fa510ae3cefe2d63972966a0c2140559b6b56");
 
-	//for pickup
+	
 	$name = $_SESSION['user'];
 	$origin = $_POST['origin'];
 	$date = $_POST['date'];
@@ -18,24 +18,24 @@
 	$extra = $_POST['extra'];
 	$id = $_SESSION['id'];
 	
-	//for destination
+	
 	$destination = $_POST['destination'];
 	$duration = $_POST['duration'];
 	
-	//for cost
+	
 	$distance = $_POST['distance'];
 	$total = $_POST['total'];
 	
 	
-	//pickup insert
+	
 	$pStmt = $dbh->prepare('INSERT INTO public.pickup(pickup_location, pickup_time, extra_considerations, user_id, pickup_date) VALUES(:origin, :time, :extra, :id, :date)');
 	$pStmt->execute( array('origin' => $origin, 'time' => $time, 'extra' => $extra, 'id' => $id, 'date' => $date) );
 	
-	//destination insert
+	
 	$dStmt = $dbh->prepare('INSERT INTO public.destination(destination_location, estimated_arrival, user_id) VALUES(:destination, :duration, :id)');
 	$dStmt->execute( array('desination' => $destination, 'duration' => $duration, 'id' => $id) );
 
-	//cost insert
+	
 	$cStmt = $dbh->prepare('INSERT INTO public.cost(distance, total, user_id) VALUES(:distance, :total, :id)');
 	$cStmt->execute( array('distance' => $distance, 'duration' => $duration, ':id' => $id) );
 	

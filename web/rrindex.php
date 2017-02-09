@@ -18,7 +18,7 @@
 	echo "<br>prepared";
 	$tesResult = $testQuery->execute( array('name' => $name) );
 	echo "<br>executed";
-	while ($row = pg_fetch_assoc($testResult)){
+	while ($row = $testResult->fetch(PDO_FETCH_ASSOC)){
 			$_SESSION['id'] = $row['user_id'];
 			echo "<br>" . $_SESSION['id'];
 	}
