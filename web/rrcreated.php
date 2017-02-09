@@ -14,9 +14,9 @@
 	 echo $name;
 	 echo $code;
 	 
-	 //$query = 'INSERT INTO public.user(user_name, password) VALUES(:name, :code)';
+	 $query = 'INSERT INTO public.user(user_name, password) VALUES(:name, :code)';
 	 
-	 //echo $query;
+	 echo $query;
 	 
        //$preparedStatement = pg_prepare($query);
 
