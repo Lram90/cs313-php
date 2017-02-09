@@ -23,7 +23,7 @@
 	   echo "<br>" . $name;
 	   $preparedStatement->bindValue(':name', $name, PDO::PARAM_STR);
 	   $preparedStatement->bindValue(':code', $code, PDO::PARAM_STR);
-	   echo "<br>" . $name;
+	   echo "<br>" . $name. "2";
 	   
 	   //$preparedStatement->execute();
 		
