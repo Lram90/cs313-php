@@ -12,14 +12,12 @@
 	$code = $_SESSION['pass'];
 	
 	echo "<br>" . $name . $code;
-	
-	//$valid_user = FALSE;
-	//echo "<br>" $valid_user;
+	echo "ready for prep";
  
-	$testQuery = $dbh->prepare('SELECT user_id FROM public.user WHERE user_name = :name');
-	echo "<br>" . $testQuery;
+	$testQuery = $dbh->prepare('SELECT * FROM public.user WHERE user_name = :name');
+	echo "<br>prepared";
 	$tesResult = $testQuery->execute( array('name' => $name) );
-	
+	echo "<br>executed";
 	while ($row = pg_fetch_assoc($testResult)){
 			$_SESSION['id'] = $row['user_id'];
 			echo "<br>" . $_SESSION['id'];
