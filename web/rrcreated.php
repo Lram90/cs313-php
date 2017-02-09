@@ -11,9 +11,15 @@
 	 $name = $_POST['newUserName'];
 	 $code = $_POST['code'];
 
-       $preparedStatement = pg_prepare('INSERT INTO public.user(user_name, password) VALUES(:name, :code');
+	 $query = 'INSERT INTO public.user(user_name, password) VALUES(:name, :code)';
+	 
+       $preparedStatement = pg_prepare($query);
 
-	   $preparedStatement->execute(array('name' => $name, 'code' => $code));
+	   $preparedStatement->bindValue(':name', $name);
+	   $preparedStatement->bindValue(':code', $code);
+	   
+	   
+	   $preparedStatement->execute();
 		
 	echo "<h1>Account created Successfully</h1><a href='rrlogin.php'>Back to Login</a>";
  ?>
