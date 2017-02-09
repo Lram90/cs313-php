@@ -23,7 +23,7 @@
 	if (!$valid_user){
 		$message = "Your User Name or Password do not match";
 		echo "<script type='text/javascript'>alert('$message');</script>";
-		header('Location: https://stormy-spire-65023.herokuapp.com/rrlogin.php', true);
+		//header('Location: https://stormy-spire-65023.herokuapp.com/rrlogin.php', true);
 	}
 ?>
 
