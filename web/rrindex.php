@@ -84,7 +84,7 @@ high width, low height-->
 
 <input type="submit" value="Order" />
 
-<!--<script async defer
+<script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7ZXhSJiWSb46IF5UfcIi6UQik29F78To&callback=initMap">
 </script>
 <script>
@@ -130,7 +130,7 @@ function initMap() {
     }
   });
 }
-</script>-->
+</script>
 
 </form>
 
