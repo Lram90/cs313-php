@@ -1,5 +1,6 @@
 <?php
  session_start();
+ 
  ?>
  
  <!doctype html>
@@ -26,6 +27,17 @@
 	$distance = $_POST['distance'];
 	$total = $_POST['total'];
 	
+	var_dump(
+	$name, $origin, $date, $time, $extra, $id,;
+	)
+	
+	
+	$destination = $_POST['destination'];
+	$duration = $_POST['duration'];
+	
+	
+	$distance = $_POST['distance'];
+	$total = $_POST['total'];)
 	
 	
 	$pStmt = $dbh->prepare('INSERT INTO public.pickup(pickup_location, pickup_time, extra_considerations, user_id, pickup_date) VALUES(:origin, :time, :extra, :id, :date)');
