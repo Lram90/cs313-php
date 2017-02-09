@@ -23,7 +23,7 @@
 	 
        $preparedStatement = pg_prepare($query);
 
-	   echo "<br>" . $name;1
+	   echo "<br>" . $name;
 	   $preparedStatement->bindValue(':name', $name);
 	   $preparedStatement->bindValue(':code', $code);
 	   echo "<br>" . $name. "2";
