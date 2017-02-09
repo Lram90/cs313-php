@@ -2,6 +2,29 @@
 	session_start();
 	$_SESSION['user'] = $_POST['uname'];
 	$_SESSION['pass'] = $_POST['psw'];
+	
+	$dbh = new PDO("pgsql:host=ec2-54-243-38-139.compute-1.amazonaws.com;port=5432;dbname=d89833096k0ivr", "uhieutjjtvpbri", "53f15317bc3fba7ca9c92f06895fa510ae3cefe2d63972966a0c2140559b6b56");
+ 
+	$name = $_SESSION['user'];
+	$code = $_SESSION['pass'];
+	
+	$valid_user = FALSE;
+ 
+	$testQuery = $dbh->prepare('SELECT user_id FROM public.user WHERE user_name = :name');
+	$tesResult = $testQuery->execute( array('name' => $name) );
+ 
+	if ($testResult) { 
+		$valid_user = TRUE;
+		while ($row = pg_fetch_assoc($testResult)){
+			$_SESSION['id'] = $row['user_id'];
+		}
+	}
+ 
+	if (!$valid_user){
+		$message = "Your User Name or Password do not match";
+		echo "<script type='text/javascript'>alert('$message');</script>";
+		header('Location: https://stormy-spire-65023.herokuapp.com/rrlogin.php', true);
+	}
 ?>
 
 <!doctype html>
@@ -32,28 +55,35 @@ high width, low height-->
 
 <h2>Ride Order Form</h2>
 
-<form id="ride">
+<form id="ride" action="rrordered.php" method="post" >
 
 <p>Pick-up location:</p>
-<input type="text" id="origin" onchange="update()"/>
+<input type="text" name="origin" id="origin" onchange="initMap()"/>
 
-<p>Date and Time of Departure:</p>
-<input type="datetime-local" name="date" id="date" onchange="update()" />
+<p>Date of Departure:</p>
+<input type="date" name="date" id="date" required />
+
+<p>Time of Departure:</p>
+<input type="time" name="time" id="time" required />
 
 <p>Special Instructions (ie apartment number, ring doorbell...):</p>
-<input type="text" id="extra" />
+<input type="text" name="extra" id="extra" />
 
 <p>Destination Location:</p>
-<input type="text" id="destination" onchange="initMap()" />
-
+<input type="text" id="destination" name="destination" onchange="initMap()" required />
 
 <p>Distance:</p>
-<input type="text" id="distance" readonly />
+<input type="text" id="distance" name="distance" readonly required />
 
 <p>Trip Time:</p>
-<input type="text" id="duration" readonly />
+<input type="text" id="duration" name="duration" readonly required />
 
-<!-- <script async defer
+<p>Total:</p>
+<input type="text" id="total" name="total" readonly required />
+
+</form>
+
+<script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7ZXhSJiWSb46IF5UfcIi6UQik29F78To&callback=initMap">
 </script>
 <script>
@@ -64,6 +94,7 @@ function initMap() {
   var destination = document.getElementById('destination').value;
   var distance = document.getElementById('distance');
   var duration = document.getElementById('duration');
+  var total = document.getElementById('total');
 
   if(origin != "" && destination!= ""){
 	  origin = origin + "+Rexburg+ID";
@@ -92,12 +123,13 @@ function initMap() {
         for (var j = 0; j < results.length; j++) {
           distance.value = results[j].distance.text;
 		  duration.value = results[j].duration.text;
+		  total.value = 2.00 * (parseFloat(distance.value));
         }
       }
     }
   });
 }
-</script> -->
+</script>
 
 </form>
 
