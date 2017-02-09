@@ -34,9 +34,6 @@ high width, low height-->
 
 <form id="ride">
 
-<p>User Name:</p>
-<input type="text" id="user" value="<?php echo $_SESSION['user'];?>" readonly />
-
 <p>Pick-up location:</p>
 <input type="text" id="origin" onchange="update()"/>
 

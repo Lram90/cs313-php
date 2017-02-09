@@ -59,18 +59,16 @@ button {
 </style>
 </head>
 <body>
-<form action="action_page.php">
+<form action="rrcreated.php" method="post">
   <div class="container">
     <label><b>UserName</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+    <input type="text" placeholder="Enter UserName" name="newUserName" required>
 
     <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="code" required>
 
     <label><b>Repeat Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-    <input type="checkbox" checked="checked"> Remember me
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
     <div class="clearfix">
       <button type="button"  class="cancelbtn">Cancel</button>
