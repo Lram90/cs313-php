@@ -25,9 +25,9 @@
 	 echo $query;
 	 
       $preparedStatement = $db->prepare($query);
-
+		echo "prepared";
 	  $preparedStatement->execute(array('user_name' => $name, 'password' => $password));
-	   
+	   echo "inserted";
 	   //$preparedStatement->execute();
 		
 	//echo "<h1>Account created Successfully</h1><a href='rrlogin.php'>Back to Login</a>";
