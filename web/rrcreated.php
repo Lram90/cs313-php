@@ -11,7 +11,12 @@
 	 $name = $_POST['newUserName'];
 	 $code = $_POST['code'];
 
+	 echo $name;
+	 echo $code;
+	 
 	 //$query = 'INSERT INTO public.user(user_name, password) VALUES(:name, :code)';
+	 
+	 //echo $query;
 	 
        //$preparedStatement = pg_prepare($query);
 
