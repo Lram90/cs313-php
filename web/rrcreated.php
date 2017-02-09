@@ -20,8 +20,12 @@
 	 
        $preparedStatement = pg_prepare($query);
 
+	   echo $preparedStatement;
+	   
 	   echo "<br>" . $name;
 	   $preparedStatement->bindValue(':name', $name);
+	   echo "<br>" . $name . "1";
+	   
 	   $preparedStatement->bindValue(':password', $password);
 	   echo "<br>" . $name. "2";
 	   
