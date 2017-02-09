@@ -22,7 +22,7 @@
 
 	   echo $preparedStatement;
 	   
-	   echo "<br>" . $name;
+	   echo "<br>" . $name . "hello";
 	   $preparedStatement->bindValue(':name', $name);
 	   echo "<br>" . $name . "1";
 	   
