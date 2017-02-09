@@ -18,8 +18,9 @@
 	 
 	 echo $query;
 	 
-       //$preparedStatement = pg_prepare($query);
+       $preparedStatement = pg_prepare($query);
 
+	   echo "<br>" . $name;
 	   //$preparedStatement->bindValue(':name', $name);
 	   //$preparedStatement->bindValue(':code', $code);
 	   
