@@ -27,9 +27,9 @@
 	$distance = $_POST['distance'];
 	$total = $_POST['total'];
 	
-	var_dump(
-	$name, $origin, $date, $time, $extra, $id
-	);
+	
+	echo $name . $origin . $date . $time . $extra . $id;
+	
 	
 	
 	$destination = $_POST['destination'];
