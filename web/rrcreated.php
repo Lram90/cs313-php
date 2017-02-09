@@ -21,9 +21,9 @@
        $preparedStatement = pg_prepare($query);
 
 	   echo "<br>" . $name;
-	   //$preparedStatement->bindValue(':name', $name);
-	   //$preparedStatement->bindValue(':code', $code);
-	   
+	   $preparedStatement->bindValue(':name', $name);
+	   $preparedStatement->bindValue(':code', $code);
+	   echo "<br>" . $name;
 	   
 	   //$preparedStatement->execute();
 		
