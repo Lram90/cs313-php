@@ -28,8 +28,8 @@
 	$total = $_POST['total'];
 	
 	var_dump(
-	$name, $origin, $date, $time, $extra, $id,;
-	)
+	$name, $origin, $date, $time, $extra, $id
+	);
 	
 	
 	$destination = $_POST['destination'];
