@@ -1,5 +1,6 @@
 <?php
  session_start();
+ echo $_POST['newUserName'];
  ?>
  
  <!doctype html>
