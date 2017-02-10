@@ -1,5 +1,7 @@
 <?php
  session_start();
+ echo $_SESSION['id'];
+ 
  $id = $_SESSION['id'];
  ?>
  
