@@ -41,7 +41,7 @@
 
 	$dbhc = new PDO("pgsql:host=ec2-54-243-38-139.compute-1.amazonaws.com;port=5432;dbname=d89833096k0ivr", "uhieutjjtvpbri", "53f15317bc3fba7ca9c92f06895fa510ae3cefe2d63972966a0c2140559b6b56");
 	
-	$cStmt = $dbhc->prepare('INSERT INTO public.cost(distance, total, user_id) VALUES(:distance, :total, :id)');
+	$cStmt = $dbhd->prepare('INSERT INTO public.cost(distance, total, user_id) VALUES(:distance, :total, :id)');
 	$cStmt->execute( array('distance' => $distance, 'total' => $total, ':id' => $id) );
 	
 	echo "<h1>Order Successful!</h1><a href='rrlogin.php'>Back to Login</a><br /> <br /> <h2>YOUR RIDES</h2>";
