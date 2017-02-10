@@ -1,6 +1,6 @@
 <?php
  session_start();
- 
+ $id = $_SESSION['id'];
  ?>
  
  <!doctype html>
@@ -17,7 +17,7 @@
 	$date = $_POST['date'];
 	$time = $_POST['time'];
 	$extra = $_POST['extra'];
-	$id = $_SESSION['id'];
+
 	
 	
 	$destination = $_POST['destination'];
