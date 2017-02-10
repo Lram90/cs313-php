@@ -14,9 +14,9 @@
 	echo "<br>" . $name . $code;
 	echo "ready for prep";
  
-	$testQuery = $dbh->prepare('SELECT * FROM public.user WHERE user_name = :name');
+	$testQuery = $dbh->prepare('SELECT * FROM public.user WHERE user_name = :name AND password = :code');
 	echo "<br>prepared";
-	$testQuery->execute( array('name' => $name) );
+	$testQuery->execute( array('name' => $name, 'code' = $code) );
 	echo "<br>executed";
 	$row = $testQuery->fetch();
 	$_SESSION['id'] = $row['user_id'];
@@ -24,7 +24,7 @@
 	if ($_SESSION['id'] === NULL) {
 		$message = "Your User Name or Password do not match";
 		echo "<script type='text/javascript'>alert('$message');</script>";
-		header('Location: https://stormy-spire-65023.herokuapp.com/rrlogin.php', true);
+		header('Location: https://stormy-spire-65023.herokuapp.com/rrwarning.php', true);
 	}
 ?>
 

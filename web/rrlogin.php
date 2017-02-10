@@ -65,7 +65,7 @@ span.psw {
     <button type="submit">Login</button>
   </div>
 </form>
-<p>New to Rexburg Rides?:</p>
+<p>New to Rexburg Rides?</p>
 <a href="rrsignup.php">Sign Up for an Accout</a>
 
 </body>
