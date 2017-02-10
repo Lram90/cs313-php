@@ -58,6 +58,8 @@ high width, low height-->
 
 <form id="ride" action="rrordered.php" method="post" >
 
+<input id="id" name="id" style="width: 0px; height: 0px;" readonly value="<?php $_SESSION['id']?>" />
+
 <p>Pick-up location:</p>
 <input type="text" name="origin" id="origin" onchange="initMap()"/>
 
