@@ -36,11 +36,11 @@
 	
 	
 	$dStmt = $dbh->prepare('INSERT INTO public.destination(destination_location, estimated_arrival, user_id) VALUES(:destination, :duration, :id)');
-	$dStmt->execute( array('desination' => $destination, 'duration' => $duration, 'id' => $id) );
+	$dStmt->execute( array('destination' => $destination, 'duration' => $duration, 'id' => $id) );
 
 	
 	$cStmt = $dbh->prepare('INSERT INTO public.cost(distance, total, user_id) VALUES(:distance, :total, :id)');
-	$cStmt->execute( array('distance' => $distance, 'duration' => $duration, ':id' => $id) );
+	$cStmt->execute( array('distance' => $distance, 'total' => $total, ':id' => $id) );
 	
 	echo "<h1>Order Successful!</h1><a href='rrlogin.php'>Back to Login</a><br /> <br /> <h2>YOUR RIDES</h2>";
 	
