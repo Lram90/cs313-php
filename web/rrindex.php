@@ -14,9 +14,9 @@
 	echo "<br>" . $name . $code;
 	echo "ready for prep";
  
-	$testQuery = $dbh->prepare('SELECT * FROM public.user WHERE user_name = :name');
+	$testQuery = $dbh->prepare('SELECT * FROM public.user WHERE user_name = :name AND password = :code');
 	echo "<br>prepared";
-	$testQuery->execute( array('name' => $name) );
+	$testQuery->execute( array('name' => $name, 'code' => $code) );
 	echo "<br>executed";
 	$row = $testQuery->fetch();
 	$_SESSION['id'] = $row['user_id'];
