@@ -8,7 +8,7 @@
  <body>
  <?php
 
-	echo "<h1>User Name or Password do not match</h1><a href='rrlogin.php'>Back to Login</a>";
+	echo "<h1>Sorry: your username and password do not match</h1><a href='rrlogin.php'>Back to Login</a>";
  ?>
  </body>
  </html>
