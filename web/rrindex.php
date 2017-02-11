@@ -70,7 +70,7 @@ high width, low height-->
 <input type="time" name="time" id="time" required />
 
 <p>Special Instructions (ie apartment number, ring doorbell...):</p>
-<input type="textarea" name="extra" id="extra" />
+<textarea name="extra" id="extra" rows="4" cols="50" />
 
 <p>Destination Location:</p>
 <input type="text" id="destination" name="destination" onchange="initMap()" required />
