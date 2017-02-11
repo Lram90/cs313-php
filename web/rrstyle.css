@@ -47,10 +47,18 @@ div.main{
 
 table {
 	border: 1; 
-	cellpadding: 5; 
-	cellspacing: 5;
+	cellpadding: 20px; 
+	cellspacing: 20px;
 	text-align: center;
 	width: 75%;
+	font-size: 125%;
+	border: 3px black solid;
+}
+
+td {
+	width: 10%;
+	text-align: center;
+	
 }
 
 a.bodylink {
