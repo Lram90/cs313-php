@@ -2,6 +2,7 @@ body{
 	margin-left: 10%;
 	background-color: orange;
 	text-align: center;
+	color: white;
 }
 
 div.head{
@@ -11,8 +12,6 @@ div.head{
 }
 
 div.tab{
-
-	float: left;
 	text-align: center;
 }
 
@@ -59,4 +58,6 @@ a.bodylink {
 form#ride{
 	background-color: #d8d8d8;
 	text-align: center;
+	color: black;
+	width: 50%;
 }
