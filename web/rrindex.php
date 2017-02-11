@@ -3,24 +3,22 @@
 	$_SESSION['user'] = $_POST['uname'];
 	$_SESSION['pass'] = $_POST['psw'];
 	
-	echo $_SESSION['user']; 
-	echo $_SESSION['pass'];
+
 	
 	$dbh = new PDO("pgsql:host=ec2-54-243-38-139.compute-1.amazonaws.com;port=5432;dbname=d89833096k0ivr", "uhieutjjtvpbri", "53f15317bc3fba7ca9c92f06895fa510ae3cefe2d63972966a0c2140559b6b56");
  
 	$name = $_SESSION['user'];
 	$code = $_SESSION['pass'];
 	
-	echo "<br>" . $name . $code;
-	echo "ready for prep";
+
  
 	$testQuery = $dbh->prepare('SELECT * FROM public.user WHERE user_name = :name AND password = :code');
-	echo "<br>prepared";
+
 	$testQuery->execute( array('name' => $name, 'code' => $code) );
-	echo "<br>executed";
+
 	$row = $testQuery->fetch();
 	$_SESSION['id'] = $row['user_id'];
-	echo "<br>" . $_SESSION['id'];
+	
 	if ($_SESSION['id'] === NULL) {
 		$message = "Your User Name or Password do not match";
 		echo "<script type='text/javascript'>alert('$message');</script>";
