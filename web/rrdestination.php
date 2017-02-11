@@ -12,7 +12,7 @@
 <body>
 <div class="head"><!--easier to format layout-->
 <img></img><!--get a logo figured out for here-->
-<h1>Daily Schedule</h1>
+<h1>Rides By Destination</h1>
 
 <h3>Enter Destination Address:</h3>
 <form id="myForm" method="post" action="dresults.php" />
