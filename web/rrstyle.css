@@ -50,14 +50,15 @@ table {
 	cellpadding: 20px; 
 	cellspacing: 20px;
 	text-align: center;
-	width: 75%;
+	width: 100%;
 	font-size: 125%;
 	border: 3px black solid;
 }
 
 td {
-	width: 10%;
+	width: 15%;
 	text-align: center;
+	border: 3px black solid;
 	
 }
 
