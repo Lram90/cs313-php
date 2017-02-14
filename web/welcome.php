@@ -2,7 +2,7 @@
 	session_start();
 	if ($_SESSION['username'] === NULL)
 	{
-		header('Location: signin.php', true)
+		header('Location: signin.php', true);
 	}
 	else
 	{

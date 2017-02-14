@@ -41,7 +41,7 @@
     <label>Password</label>
     <input type="password" id="pass" placeholder="Enter Password" name="pass" required>
 	<br>
-	<button type="submit">Sign In</button>
+	<button type="submit">Sign In</button><br>
 	<a href="signup.php">Signup for new account</a>
 </form>
 
