@@ -32,7 +32,7 @@
     <label>Repeat Password</label>
     <input type="password" id="repeat" placeholder="Repeat Password" name="repeat" required>
 	<br>
-      <button type="submit" class="signupbtn">Sign Up</button>
+      <button type="submit">Sign Up</button>
 	  
 
  
