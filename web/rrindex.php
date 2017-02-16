@@ -36,7 +36,7 @@
 
 <body>
 <div class="head"><!--easier to format layout-->
-<img></img><!--get a logo figured out for here-->
+<img>rrlogo.png</img><!--get a logo figured out for here-->
 <h1>Rexburg Rides</h1>
 </div>
 
