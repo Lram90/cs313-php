@@ -48,7 +48,7 @@
 
 <form id="ride" action="rrordered.php" method="post" >
 
-<?php echo"<input id=\"id\" name=\"id\" style=\"width: 0px; height: 0px;\" readonly value=" . $_SESSION['id'] . " />" ?>
+<?php echo"<input id=\"id\" name=\"id\" visibility='hidden' style=\"width: 0px; height: 0px;\" readonly value=" . $_SESSION['id'] . " />" ?>
 
 <p>Pick-up location:</p>
 <input type="text" name="origin" id="origin" onchange="initMap()"/>
