@@ -59,9 +59,6 @@
 <p>Time of Departure:</p>
 <input type="time" name="time" id="time" required />
 
-<p>Special Instructions (ie apartment number, ring doorbell...):</p>
-<textarea name="extra" id="extra" rows="4" cols="50" ></textarea>
-
 <p>Destination Location:</p>
 <input type="text" id="destination" name="destination" onchange="initMap()" required />
 
@@ -73,6 +70,11 @@
 
 <p>Total:</p>
 <input type="text" id="total" name="total" readonly required />
+<br>
+
+<p>Special Instructions (ie apartment number, ring doorbell...):</p>
+<textarea name="extra" id="extra" rows="4" cols="50" ></textarea>
+<br>
 
 <input type="submit" value="Order" />
 
