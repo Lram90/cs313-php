@@ -1,13 +1,25 @@
 body{
-	margin-left: 10%;
-	background-color: #33cc33;
+	background: radial-gradient(rgb(200, 200, 200), rgb(120, 132, 190));
 	color: white;
+	text-align: center;
 }
 
 div.head{
 	float: left;
-	width: 90%;
+	width: 100%;
+	background: linear-gradient(rgb(0, 0, 0), rgb(60, 250, 60)); 
+	text-align: center;
+}
 
+h1{
+	font-size: 300%;
+}
+
+img{
+
+	height: 120px;
+	width: 120px;
+	margin-left: 2%;
 }
 
 div.tab{
@@ -41,8 +53,9 @@ ul.tab li a {
 }
 
 div.main{
-	float: left;
-	width: 90%;
+
+	width: 100%;
+	text-align: center;
 }
 
 table {
@@ -66,6 +79,11 @@ a.bodylink {
 }
 
 form#ride{
-	background-color: #d8d8d8;
-	color: black;
+	background-color: rgb(30, 170, 30);
+	color: white;
+	width: 50%;
+	padding-left: 50px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-left: 22%;
 }

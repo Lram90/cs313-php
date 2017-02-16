@@ -39,14 +39,6 @@
 <img></img><!--get a logo figured out for here-->
 <h1>Rexburg Rides</h1>
 </div>
-<div class="tab">
-	<ul class="tabs">
-		<li><a class="tablink" href="rrdestination.php">Rides by Destination</a>
-		<li><a class="tablink" href="rrorigin.php">Rides by Origin</a>
-		<li><a class="tablink" href="rrcustomer.php">Rides by Customer</a>
-	</ul>	
-</div><!--implement navagation tabs directly under the header here,
-high width, low height-->
 
 </div><!--links on the side, float left, high height, low width-->
 
