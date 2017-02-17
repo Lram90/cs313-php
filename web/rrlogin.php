@@ -19,8 +19,8 @@
 	$hash = $row['password'];
 	$_SESSION['utype'] = $row['user_type'];
 	
+	echo $hash . "<br>" . $_SESSION['utype']; 
 	
-	echo $pass;
 	
 	if (password_verify($pass, $hash)) {
 		$_SESSION['username'] = $_POST['username'];
