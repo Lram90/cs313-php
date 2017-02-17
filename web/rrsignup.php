@@ -32,6 +32,9 @@ body {
 <img src="rrlogo.png"></img><!--get a logo figured out for here-->
 <h1>Rexburg Rides</h1>
 </div>
+
+<h2>Login</h2>
+
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
   <div class="container">
     <label><b>UserName</b></label><br>
