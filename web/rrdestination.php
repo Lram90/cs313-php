@@ -11,8 +11,11 @@
 
 <body>
 <div class="head"><!--easier to format layout-->
-<img></img><!--get a logo figured out for here-->
+<img src="rrlogo.png"></img><!--get a logo figured out for here-->
+<h1>Rexburg Rides</h1>
+</div>
 <h1>Rides By Destination</h1>
+<br>
 
 <h3>Enter Destination Address:</h3>
 <form id="myForm" method="post" action="dresults.php" />
