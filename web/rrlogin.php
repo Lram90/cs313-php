@@ -19,7 +19,9 @@
 	$hash = $row['password'];
 	$_SESSION['utype'] = $row['user_type'];
 	
-	echo $hash . "<br>" . $_SESSION['utype']; 
+	$test = password_hash($pass, PASSWORD_DEFAULT);
+	
+	echo $hash . "<br>" . $test . "<br>" . $_SESSION['utype']; 
 	
 	
 	if (password_verify($pass, $hash)) {
