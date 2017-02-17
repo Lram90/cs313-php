@@ -33,8 +33,6 @@ body {
 	$distance = $_POST['distance'];
 	$total = $_POST['total'];
 	
-	echo $name . "<br>" . $origin . "<br>" . $time . "<br>" . $id . "<br>" . $total . "<br>";
-	
 	
 	$pStmt = $dbh->prepare('INSERT INTO public.pickup(pickup_location, pickup_time, extra_considerations, user_id, pickup_date) VALUES(:origin, :time, :extra, :id, :date)');
 	$pStmt->execute( array('origin' => $origin, 'time' => $time, 'extra' => $extra, 'id' => $id, 'date' => $date) );
