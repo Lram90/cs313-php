@@ -47,9 +47,6 @@ body {
     <label><b>Password</b></label><br>
     <input type="password" placeholder="Enter Password" name="password" required>
 	<br>
-    <label><b>Repeat Password</b></label><br>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-	<br>
       <button type="submit">Sign Up</button>
     </div>
   </div>
