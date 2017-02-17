@@ -8,7 +8,9 @@
 
 <body>
 <div class="head"><!--easier to format layout-->
-<img></img><!--get a logo figured out for here-->
+<img src="rrlogo.png"></img><!--get a logo figured out for here-->
+<h1>Rexburg Rides</h1>
+</div>
 <h1>Rides from Origin</h1>
 
 <h3>Enter Origin Address:</h3>
@@ -18,8 +20,10 @@
 </form>
 
 
-
+<h2>Results</h2>
 <?php 
+
+	if ($_SERVER["REQUEST_METHOD"] === "POST") { 
          $db = pg_connect('host=ec2-54-243-38-139.compute-1.amazonaws.com dbname=d89833096k0ivr user=uhieutjjtvpbri password=53f15317bc3fba7ca9c92f06895fa510ae3cefe2d63972966a0c2140559b6b56');
 
         $query = "SELECT * FROM public.user u, public.pickup p, public.destination d, public.cost c WHERE u.user_id = p.user_id AND u.user_id = d.user_id AND u.user_id = c.user_id";
@@ -31,7 +35,7 @@
             exit(); 
         } 
 		
-		echo "<table><tr><th>User Name</th><th>Pickup Location</th><th>Pickup Time</th><th>Destination Location</th><th>Estimated Arrival Time</th><th>distance</th><th>Total</th></tr>";
+		echo "<table><tr><th>User Name</th><th>Pickup Location</th><th>Pickup Time</th><th>Destination Location</th><th>Estimated Arrival Time</th><th>Distance</th><th>Total</th></tr>";
 		
 		//user_name pickup_location pickup_time destination_location estimated_arrival distance total 
 		
@@ -40,6 +44,7 @@
         }	
 
 			echo "</table>";
+	}
         ?> 
 </body>
 
