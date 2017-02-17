@@ -30,20 +30,20 @@ body {
 <body>
 <div class="head"><!--easier to format layout-->
 <img src="rrlogo.png"></img><!--get a logo figured out for here-->
+<h1>Rexburg Rides</h1>
+</div>
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
   <div class="container">
-    <label><b>UserName</b></label>
+    <label><b>UserName</b></label><br>
     <input type="text" placeholder="Enter UserName" name="newUserName" required>
-
-    <label><b>Password</b></label>
+	<br>
+    <label><b>Password</b></label><br>
     <input type="password" placeholder="Enter Password" name="code" required>
-
-    <label><b>Repeat Password</b></label>
+	<br>
+    <label><b>Repeat Password</b></label><br>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-    <div class="clearfix">
-      <button type="button"  class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
+	<br>
+      <button type="submit">Sign Up</button>
     </div>
   </div>
 </form>
