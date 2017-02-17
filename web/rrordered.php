@@ -13,7 +13,7 @@
 	$dbh = new PDO("pgsql:host=ec2-54-243-38-139.compute-1.amazonaws.com;port=5432;dbname=d89833096k0ivr", "uhieutjjtvpbri", "53f15317bc3fba7ca9c92f06895fa510ae3cefe2d63972966a0c2140559b6b56");
 
 	
-	$name = $_SESSION['user'];
+	$name = $_SESSION['username'];
 	$origin = $_POST['origin'];
 	$date = $_POST['date'];
 	$time = $_POST['time'];

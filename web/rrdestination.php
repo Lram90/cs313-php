@@ -35,7 +35,7 @@
             exit(); 
         } 
 		
-		echo "<table><tr><th>User Name</th><th>Pickup Location</th><th>Pickup Time</th><th>Destination Location</th><th>Estimated Arrival Time</th><th>distance</th><th>Total</th></tr>";
+		echo "<table><tr><th>User Name</th><th>Pickup Location</th><th>Pickup Time</th><th>Destination Location</th><th>Estimated Arrival Time</th><th>Distance</th><th>Total</th></tr>";
 		
 		//user_name pickup_location pickup_time destination_location estimated_arrival distance total 
 		
