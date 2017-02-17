@@ -13,9 +13,11 @@
 
 	
 		$stmt = $dbh->prepare('INSERT INTO public.user(user_name, password, user_type) VALUES(:name, :hash, :type)');
-		$stmt->execute( array('name' => $_POST['newUserName'], 'hash' => $hash, 'type' => $temp) );
+		$stmt->execute( array('name' => $_POST['user'], 'hash' => $hash, 'type' => $temp) );
 		
-		header('Location: rrlogin.php', true);
+		$stmt->debugDumpParams();
+		
+		//header('Location: rrlogin.php', true);
 	}
  ?>
 
@@ -40,7 +42,7 @@ body {
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
   <div class="container">
     <label><b>UserName</b></label><br>
-    <input type="text" placeholder="Enter UserName" name="newUserName" required>
+    <input type="text" placeholder="Enter UserName" name="user" required>
 	<br>
     <label><b>Password</b></label><br>
     <input type="password" placeholder="Enter Password" name="code" required>
