@@ -1,5 +1,9 @@
 <?php
 	session_start();
+	
+	if($_SESSION['utype'] == 1){
+		header('Location = rradmin.php' true);
+	};
 ?>
 
 <!doctype html>
@@ -103,12 +107,6 @@ function initMap() {
 </script>
 
 </form>
-
-<h3>Are you a driver? Try These Links: </h3>
-<!--<a href="rrdriver.php">Drivers' Page</a> Direct links?-->
-<a class="bodylink" href="rrdestination.php">Rides by Destination</a><br>
-<a class="bodylink" href="rrorigin.php">Rides by Origin</a><br>
-<a class="bodylink" href="rrcustomer.php">Rides by Customer</a>
 </div>
 
 

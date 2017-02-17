@@ -17,6 +17,8 @@
 
 	$row = $testQuery->fetch();
 	$hash = $row['password'];
+	$_SESSION['utype'] = $row['user_type'];
+	
 	
 	echo $pass;
 	
