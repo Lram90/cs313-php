@@ -15,7 +15,10 @@ body {
 </style>
 </head>
 <body>
-
+<div class="head"><!--easier to format layout-->
+<img src="rrlogo.png"></img><!--get a logo figured out for here-->
+<h1>Rexburg Rides</h1>
+</div>
 <h2>Login Form</h2>
 
 <form action="rrindex.php" method="post" >
@@ -26,7 +29,7 @@ body {
 	<br>
     <label><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
-        
+        <br>
     <button type="submit">Login</button>
   </div>
 </form>
