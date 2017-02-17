@@ -9,6 +9,7 @@ div.head{
 	width: 100%;
 	background: linear-gradient(rgb(0, 0, 0), rgb(60, 250, 60)); 
 	text-align: center;
+	margin-bottom: 50px;
 }
 
 h1{
