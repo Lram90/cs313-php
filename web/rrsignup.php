@@ -3,6 +3,7 @@
 	
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	
+	echo "submited";
 		$password = $_POST['code'];
 	
 		$hash = password_hash($password, PASSWORD_DEFAULT);
