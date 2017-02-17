@@ -89,19 +89,8 @@ form{
 }
 
 
-
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-
 button {
-    background-color: #4CAF50;
+    background-color: #25dd25S;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -140,7 +129,7 @@ button {
     }
 }
 
-input[type=text], input[type=time], input[type=date] {
+input[type=text], input[type=time], input[type=date], input[type=password] {
     width: 25%;
     padding: 2px 2px;
     margin: 4px 0;
