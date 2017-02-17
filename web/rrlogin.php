@@ -8,6 +8,11 @@
 <head>
 <title>Rexburg Rides</title>
 <link rel="stylesheet" type="text/css" href="rrstyle.css">
+<style>
+body {
+	background-color: rgb(120, 132, 190);
+}
+</style>
 </head>
 <body>
 
