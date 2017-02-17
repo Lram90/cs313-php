@@ -14,7 +14,7 @@
 <h1>Rides from Origin</h1>
 
 <h3>Enter Origin Address:</h3>
-<form id="myForm" method="post" action="oresults.php" />
+<form id="myForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" />
 <input type="text" name="plocation" required='required' />
 <input type="submit" name="submit" value="Search" />
 </form>
