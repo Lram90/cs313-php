@@ -7,9 +7,7 @@
 <html>
 <head>
 <title>Rexburg Rides</title>
-<style>
 <link rel="stylesheet" type="text/css" href="rrstyle.css">
-</style>
 </head>
 <body>
 
