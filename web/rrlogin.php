@@ -8,8 +8,6 @@
 	$name = $_POST['uname'];
 	$pass = $_POST['psw'];
 	
-
-	echo $name . $pass;
  
 	$testQuery = $dbh->prepare('SELECT * FROM public.user WHERE user_name = :name');
 
