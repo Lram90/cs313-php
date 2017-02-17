@@ -18,12 +18,18 @@
 <br>
 
 <h3>Enter Destination Address:</h3>
-<form id="myForm" method="post" action="dresults.php" />
+<form id="myForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" />
 <input type="text" name="location" required='required' />
 <input type="submit" name="submit" value="Search" />
 </form>
 
+
+<h2>Results</h2>
 <?php 
+
+
+
+
          $db = pg_connect('host=ec2-54-243-38-139.compute-1.amazonaws.com dbname=d89833096k0ivr user=uhieutjjtvpbri password=53f15317bc3fba7ca9c92f06895fa510ae3cefe2d63972966a0c2140559b6b56');
 
         $query = "SELECT * FROM public.user u, public.pickup p, public.destination d, public.cost c WHERE u.user_id = p.user_id AND u.user_id = d.user_id AND u.user_id = c.user_id";
