@@ -2,7 +2,7 @@
 	session_start();
 	
 	if($_SESSION['utype'] == 1){
-		header('Location = rradmin.php' true);
+		header('Location: rradmin.php' true);
 	};
 ?>
 
