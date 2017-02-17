@@ -72,6 +72,18 @@ td {
 }
 
 a.bodylink {
+	color: white;
+	font-size: 200%;
+}
+
+a.bodylink:hover {
+	font-size: 225%;
+	color: blue;
+}
+
+a.bodylink:visited {
+	font-size: 200%;
+	color: red;
 }
 
 form{
