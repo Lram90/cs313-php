@@ -9,6 +9,7 @@
 	$pass = $_POST['psw'];
 	
 
+	echo $name . $pass;
  
 	$testQuery = $dbh->prepare('SELECT * FROM public.user WHERE user_name = :name');
 
@@ -16,6 +17,8 @@
 
 	$row = $testQuery->fetch();
 	$hash = $row['password'];
+	
+	echo $pass;
 	
 	if (password_verify($pass, $hash)) {
 		$_SESSION['username'] = $_POST['username'];
