@@ -99,40 +99,10 @@ button {
     width: 50%;
 }
 
-
-.cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
-}
-
-
-.cancelbtn,.signupbtn {
-    float: left;
-    width: 50%;
-}
-
-
-.container {
-    padding: 16px;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-
-@media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-        width: 100%;
-    }
-}
-
 input[type=text], input[type=time], input[type=date], input[type=password] {
     width: 25%;
-    padding: 2px 2px;
-    margin: 4px 0;
+    padding: 5px 5px;
+    margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
