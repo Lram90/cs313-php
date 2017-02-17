@@ -19,11 +19,17 @@
 
 <!doctype HTML>
 <head>
-<style>
+<title>Rexburg Rides</title>
 <link rel="stylesheet" type="text/css" href="rrstyle.css">
+<style>
+body {
+	background: rgb(120, 132, 190);
+}
 </style>
 </head>
 <body>
+<div class="head"><!--easier to format layout-->
+<img src="rrlogo.png"></img><!--get a logo figured out for here-->
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
   <div class="container">
     <label><b>UserName</b></label>
