@@ -3,7 +3,7 @@
 	
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	
-		$password = $_POST['password'];
+		$password = $_POST['code'];
 	
 		$hash = password_hash($password, PASSWORD_DEFAULT);
 	
@@ -13,7 +13,7 @@
 
 	
 		$stmt = $dbh->prepare('INSERT INTO public.user(user_name, password, user_type) VALUES(:name, :hash, :type)');
-		$stmt->execute( array('name' => $_POST['user'], 'hash' => $hash, 'type' => $temp) );
+		$stmt->execute( array('name' => $_POST['newUserName'], 'hash' => $hash, 'type' => $temp) );
 		
 		header('Location: rrlogin.php', true);
 	}
