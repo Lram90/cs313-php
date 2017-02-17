@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="rrstyle.css">
 <style>
 body {
-	background-color: rgb(120, 132, 190);
+	background: rgb(120, 132, 190);
 }
 </style>
 </head>
@@ -23,7 +23,7 @@ body {
   <div class="container">
     <label><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
-
+	<br>
     <label><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
         
