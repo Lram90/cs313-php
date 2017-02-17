@@ -14,6 +14,7 @@
 		$stmt->execute( array('name' => $_POST['user'], 'hash' => $hash) );
 		
 		header('Location: rrlogin.php', true);
+	}
  ?>
 
 <!doctype HTML>
