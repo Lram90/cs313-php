@@ -50,7 +50,7 @@ body {
 </div>
 <h2>Login</h2>
 
-<form action="rrindex.php" method="post" >
+<form  method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
   <div class="container">
     <label><b>Username</b></label><br>
