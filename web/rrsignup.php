@@ -33,7 +33,7 @@ body {
 <h1>Rexburg Rides</h1>
 </div>
 
-<h2>Login</h2>
+<h2>Create new Account</h2>
 
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
   <div class="container">
@@ -50,4 +50,7 @@ body {
     </div>
   </div>
 </form>
+
+<a href="rrlogin.php" class="bodylink">Already have an account?</a>
+
 </body>
