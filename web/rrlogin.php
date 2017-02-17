@@ -1,4 +1,3 @@
-
 <?php
 	session_start();
 	
@@ -16,6 +15,7 @@
 	$row = $testQuery->fetch();
 	$hash = $row['password'];
 	$_SESSION['utype'] = $row['user_type'];
+	$_SESSION['id'] = $row['user_id'];
 	
 	$test = password_hash($pass, PASSWORD_DEFAULT);
 	
