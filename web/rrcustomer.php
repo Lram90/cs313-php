@@ -15,7 +15,7 @@
 <h1>Rides by Customer</h1>
 
 <h3>Enter User Name:</h3>
-<form id="myForm" method="post" action="cresults.php" />
+<form id="myForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" />
 <input type="text" name="customer" required='required' />
 <input type="submit" name="submit" value="Search" />
 </form>
